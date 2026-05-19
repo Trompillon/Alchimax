@@ -1,0 +1,253 @@
+/* VARIABLES ET THÈME FANTASY GRIMOIRE */
+:root {
+    --bg-main: #2c1d11;         /* Brun très sombre, ambiance taverne / table en bois */
+    --bg-panel: #f2e6d0;        /* Couleur parchemin clair pour les pages du grimoire */
+    --bg-card: #e6d5b8;         /* Parchemin un peu plus sombre pour détacher les éléments */
+    --text-main: #3e2723;       /* Encre brun foncé/brûlé pour le texte principal */
+    --text-muted: #795548;      /* Brun moyen pour le texte secondaire */
+    --border-color: #bcaaa4;    /* Bordure douce style reliure */
+    
+    /* Accents Magiques */
+    --accent-glow: #d84315;     /* Ambre / Feu alchimique */
+    --accent-alch: #c62828;     /* Rouge flasque */
+    --accent-herb: #2e7d32;     /* Vert fougère */
+    --accent-pois: #6a1b9a;     /* Violet poison belladone */
+
+    /* Raretés version Encre */
+    --rar-commun: #708890;
+    --rar-peucommun: #1b5e20;
+    --rar-rare: #0d47a1;
+    --rar-tresrare: #4a148c;
+    --rar-legendaire: #e65100;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Georgia', serif; /* Police plus littéraire / JDR */
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+
+.hidden { display: none !important; }
+
+/* HEADER & FILTRES */
+.main-header {
+    background-color: #1a0f07; /* Bois très sombre pour le haut */
+    border-bottom: 3px solid #8d6e63;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.main-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    font-variant: small-caps;
+    color: #d7ccc8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-label {
+    color: #b0bec5;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* BOUTONS STYLE CUIR / PARCHEMIN */
+button {
+    background-color: #3e2723;
+    border: 1px solid #5d4037;
+    color: #d7ccc8;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #5d4037;
+    color: #fff;
+}
+
+.btn-filter.active {
+    background-color: #bcaaa4;
+    color: #3e2723;
+    font-weight: bold;
+    border-color: #d7ccc8;
+    box-shadow: 0 0 8px rgba(216, 67, 21, 0.6);
+}
+
+/* NAVIGATION DES MODES */
+.mode-navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.btn-mode {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #23150b;
+}
+
+.btn-mode.active {
+    background-color: var(--bg-panel);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+}
+
+/* LAYOUT GRIMOIRE */
+.app-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    height: calc(100vh - 240px);
+    min-height: 550px;
+}
+
+/* PANNEAUX PARCHEMIN */
+.list-panel, .preview-panel {
+    background-color: var(--bg-panel);
+    border: 2px solid #8d6e63;
+    border-radius: 4px;
+    padding: 25px;
+    overflow-y: auto;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3), inset 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* STYLE DE L'INPUT DE RECHERCHE */
+.search-box {
+    margin: 15px 0;
+    position: relative;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--bg-card);
+    border: 1px solid #a1887f;
+    border-radius: 4px;
+    color: var(--text-main);
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+    font-style: italic;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: var(--accent-glow);
+    background-color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05), 0 0 8px rgba(216, 67, 21, 0.3);
+}
+
+/* SELECTEUR DE RARETÉ */
+.sub-filters select {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--bg-card);
+    border: 1px solid #a1887f;
+    border-radius: 4px;
+    font-family: 'Georgia', serif;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+/* CARTES DE RECETTES / INGRÉDIENTS */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid #d7ccc8;
+    border-left: 5px solid var(--border-color);
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.15s ease;
+}
+
+.card:hover {
+    transform: translateX(5px);
+    background-color: #dfcfb0;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
+}
+
+.item-alchimie { border-left-color: var(--accent-alch); }
+.item-herboristerie { border-left-color: var(--accent-herb); }
+.item-poison { border-left-color: var(--accent-pois); }
+
+.card h3 {
+    font-size: 1.15rem;
+    color: #270f00;
+}
+
+.short-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* BADGES */
+.badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-top: 5px;
+}
+
+.rarete-commun { background-color: rgba(93, 64, 55, 0.15); color: var(--rar-commun); }
+.rarete-peucommun { background-color: rgba(27, 94, 32, 0.15); color: var(--rar-peucommun); }
+.rarete-rare { background-color: rgba(13, 71, 161, 0.15); color: var(--rar-rare); }
+
+/* PLACEHOLDER */
+.preview-placeholder {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 850px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .list-panel, .preview-panel {
+        height: 500px;
+    }
+}
