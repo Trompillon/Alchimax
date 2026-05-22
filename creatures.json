@@ -1,0 +1,992 @@
+[
+  {
+    "id": "branchies_kuo_toa",
+    "name": "Branchies de Kuo Toa",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "branchies_sahuagin",
+    "name": "Branchies de Sahuagin",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "dent_requin",
+    "name": "Dent de Requin",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "dard_guepe_geante",
+    "name": "Dard de Guêpe géante",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "ecailles_poisson",
+    "name": "Écailles de Poisson",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "ecailles_truite_tete_plate",
+    "name": "Écailles de Truite à tête plate",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "ecaille_serpent_feu",
+    "name": "Écaille de Serpent de feu",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "essence_elementaire_air_mineur",
+    "name": "Essence d’Élementaire d’air mineur",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "essence_elementaire_eau_mineur",
+    "name": "Essence d’Élémentaire d’eau mineur",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "essence_elementaire_feu_mineur",
+    "name": "Essence d’Élémentaire de feu mineur",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "essence_ombre",
+    "name": "Essence d’Ombre",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "glande_punaise_feu",
+    "name": "Glande de Punaise de feu",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "glande_soie_araignee_geante",
+    "name": "Glande à soie d'Araignée géante",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "glande_venin_araignee_geante",
+    "name": "Glande à venin d'Araignée géante",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "glande_venin_araignee_loup_geante",
+    "name": "Glande à venin d'Araignée-loup géante",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "glande_venin_scolopendre_geant",
+    "name": "Glande à venin de Scolopendre géant",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "griffes_chat",
+    "name": "Griffes de chat",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "griffes_ours",
+    "name": "Griffes d'Ours",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "huile_baleine",
+    "name": "Huile de Baleine",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "langue_gorille",
+    "name": "Langue de Gorille",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "meche_cheveux_dryade",
+    "name": "Mèche de cheveux de Dryade",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "meche_cheveux_belle_femme",
+    "name": "Mèche de cheveux de belle femme",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "meche_cheveux_aimer",
+    "name": "Mèche de cheveux de l’être à aimer",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "oeil_magmatique",
+    "name": "Oeil de Magmatique",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "plume_harpie",
+    "name": "Plume de Harpie",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "plume_oiseau",
+    "name": "Plume d’Oiseau",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "poussiere_mephite_magmatique",
+    "name": "Poussière de Méphite magmatique",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "poussiere_pixie",
+    "name": "Poussière de Pixie",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "poils_araignee_loup_geante",
+    "name": "Poils d'Araignée-loup géante",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "residu_spectre",
+    "name": "Résidu de Spectre",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "residu_vase",
+    "name": "Résidu de Vase (tous types)",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "salive_crapaud_geant",
+    "name": "Salive de Crapaud géant",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "sang_lion",
+    "name": "Sang de Lion",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "sang_zombi",
+    "name": "Sang de Zombi",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "serre_aigle",
+    "name": "Serre d’aigle",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "soie_araignee_geante",
+    "name": "Soie d’Araignée géante",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "tentacule_flumph",
+    "name": "Tentacule de Flumph",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "tentacule_pieuvre",
+    "name": "Tentacule de Pieuvre",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "tentacule_pieuvre_geante",
+    "name": "Tentacule de Pieuvre géante",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "touffe_poils_ecureuil",
+    "name": "Touffe de poils d'écureuil",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "glande_venin_serpent_venimeux",
+    "name": "Venin de Serpent venimeux",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "glande_venin_serpent_venimeux_geant",
+    "name": "Venin de Serpent venimeux géant",
+    "type": "creature",
+    "rarity": "common"
+  },
+  {
+    "id": "bec_cockatrice",
+    "name": "Bec de Cockatrice",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "bec_grick",
+    "name": "Bec de Grick",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "bec_grell",
+    "name": "Bec de Gr",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "corne_succube",
+    "name": "Corne de Succube",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "carapace_bulette",
+    "name": "Carapace de Bulette (morceau)",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "coeur_golem_chair",
+    "name": "Coeur de Golem de chair",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "croc_loup_arctique",
+    "name": "Croc de Loup arctique",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "dard_manticore",
+    "name": "Dard de Manticore",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "dard_scorpion_geant",
+    "name": "Dard de Scorpion géant",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "dent_requin_geant",
+    "name": "Dent de Requin géant",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragonnet",
+    "name": "Écaille de Dragonnet (tous types)",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_airain_dragonnet",
+    "name": "Écaille de dragon airain, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_argent_dragonnet",
+    "name": "Écaille de dragon argent, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_blanc_dragonnet",
+    "name": "Écaille de dragon blanc, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_bleu_dragonnet",
+    "name": "Écaille de dragon bleu, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_bronze_dragonnet",
+    "name": "Écaille de dragon bronze, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_cuivre_dragonnet",
+    "name": "Écaille de dragon cuivre, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_noir_dragonnet",
+    "name": "Écaille de dragon noir, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_or_dragonnet",
+    "name": "Écaille de dragon or, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_rouge_dragonnet",
+    "name": "Écaille de dragon rouge, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ecaille_dragon_vert_dragonnet",
+    "name": "Écaille de dragon vert, dragonnet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ectoplasme_fantome",
+    "name": "Ectoplasme de Fantôme",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "epine_manticore",
+    "name": "Épine de Manticore",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "essence_elementaire_air",
+    "name": "Essence d’Élémentaire d’air",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "essence_elementaire_eau",
+    "name": "Essence d’Élémentaire d’eau",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "essence_elementaire_feu",
+    "name": "Essence d’Élémentaire de feu",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "essence_feu_follet",
+    "name": "Essence de Feu follet",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "glande_salamandre",
+    "name": "Glande de Salamandre",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "glande_venin_ettercap",
+    "name": "Glande à venin d’Ettercap",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ichor_ankheg",
+    "name": "Ichor d'Ankheg",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "lymphe_otyugh",
+    "name": "Lymphe d’Otyugh",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "mucus_charognard_rampant",
+    "name": "Mucus de Charognard rampant",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "oeil_basilic",
+    "name": "Oeil de Basilic",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "oeil_bonnet_rouge",
+    "name": "Oeil de Bonnet rouge",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "oeil_nothic",
+    "name": "Oeil de Nothic",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "oeil_ogre",
+    "name": "Oeil d’Ogre",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "oeil_vissepince",
+    "name": "Oeil de Vissepince",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ongle_geant",
+    "name": "Ongle de Géant (tous types)",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ongle_geant_collines",
+    "name": "Ongle de Géant des collines",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "ongle_guenaude",
+    "name": "Ongle de Guenaude (tous types)",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "phalange_squelette",
+    "name": "Phalange de squelette",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "plume_peryton",
+    "name": "Plume de Péryton",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "residu_pouding_noir",
+    "name": "Résidu de Pouding noir",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "residu_vase_grise",
+    "name": "Résidu de Vase grise",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "sac_venin_grell",
+    "name": "Sac à venin de Grell",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "salive_cockatrice",
+    "name": "Salive de Cockatrice",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "sang_dragonnet",
+    "name": "Sang de Dragonnet (tous types)",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "sang_troll",
+    "name": "Sang de Troll (tous types)",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "serre_aigle_geant",
+    "name": "Serre d'Aigle géant",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "spores_myconide",
+    "name": "Spores de myconide",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "spores_moisissure_violette",
+    "name": "Spore de moisissure violette",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "touffe_poils_lion_neiges",
+    "name": "Touffe de poils de Lion des neiges",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "touffe_poils_yeti",
+    "name": "Touffe de poils de Yéti",
+    "type": "creature",
+    "rarity": "uncommon"
+  },
+  {
+    "id": "coeur_golem_pierre",
+    "name": "Coeur de Golem de pierre",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "dard_wiverne",
+    "name": "Dard de Wiverne",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_jeune",
+    "name": "Écaille de Dragon, jeune (tous types)",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_airain_jeune",
+    "name": "Écaille de dragon airain, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_argent_jeune",
+    "name": "Écaille de dragon argent, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_blanc_jeune",
+    "name": "Écaille de dragon blanc, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_bleu_jeune",
+    "name": "Écaille de dragon bleu, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_bronze_jeune",
+    "name": "Écaille de dragon bronze, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_cuivre_jeune",
+    "name": "Écaille de dragon cuivre, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_noir_jeune",
+    "name": "Écaille de dragon noir, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_or_jeune",
+    "name": "Écaille de dragon or, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_rouge_jeune",
+    "name": "Écaille de dragon rouge, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ecaille_dragon_vert_jeune",
+    "name": "Écaille de dragon vert, jeune",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "glande_salamandre_givre",
+    "name": "Glande de Salamandre du givre",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "glande_venin_drider",
+    "name": "Glande à venin de Drider",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "griffe_nycaloth",
+    "name": "Griffe de Nycaloth",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "griffe_slaad",
+    "name": "Griffe de Slaad",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "griffe_slaad_vert",
+    "name": "Griffe de Slaad vert",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "oeil_beholder",
+    "name": "Oeil de Beholder",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ongle_geant_givre",
+    "name": "Ongle de Géant de givre",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "ongle_geant_feu",
+    "name": "Ongle de Géant de feu",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "plume_deva",
+    "name": "Plume de Déva",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "plume_pegase",
+    "name": "Plume de Pégase",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "poudre_defense_mammouth",
+    "name": "Poudre de défense de Mammouth",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "sang_dragon_jeune",
+    "name": "Sang de Dragon, jeune (tous types)",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "tentacule_flagelleur_mental",
+    "name": "Tentacule de Flagelleur mental",
+    "type": "creature",
+    "rarity": "rare"
+  },
+  {
+    "id": "bile_dragon_vert_adulte",
+    "name": "Bile de Dragon vert, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "coeur_golem_fer",
+    "name": "Coeur de Golem de fer",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "crin_licorne",
+    "name": "Crin de Licorne",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "dard_ver_pourpre",
+    "name": "Dard de Ver pourpre",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_behir",
+    "name": "Écaille de Béhir",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_adulte",
+    "name": "Écailles de Dragon, adulte (tous types)",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_airain_adulte",
+    "name": "Écaille de dragon airain, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_argent_adulte",
+    "name": "Écaille de dragon argent, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_blanc_adulte",
+    "name": "Écaille de dragon blanc, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_bleu_adulte",
+    "name": "Écaille de dragon bleu, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_bronze_adulte",
+    "name": "Écaille de dragon bronze, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_cuivre_adulte",
+    "name": "Écaille de dragon cuivre, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_noir_adulte",
+    "name": "Écaille de dragon noir, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_or_adulte",
+    "name": "Écaille de dragon or, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_rouge_adulte",
+    "name": "Écaille de dragon rouge, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ecaille_dragon_vert_adulte",
+    "name": "Écaille de dragon vert, adulte",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ichor_behir",
+    "name": "Ichor de Béhir",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ichor_remorhaz",
+    "name": "Ichor de Remorhaz",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "mucus_aboleth",
+    "name": "Mucus d’Aboleth",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "main_rakshasa",
+    "name": "Main de Rakshasa",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "oeil_diable_gele",
+    "name": "Œil de Diable gelé",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "ongle_geant_nuages",
+    "name": "Ongle de Géant des nuages",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "plume_couatl",
+    "name": "Plume de Couatl",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "plume_planetar",
+    "name": "Plume de Planétar",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "plume_roc",
+    "name": "Plume de Roc",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "plume_sphinx",
+    "name": "Plume de Sphinx",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "poussiere_vampire",
+    "name": "Poussière de Vampire",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "sang_dragon_adulte",
+    "name": "Sang de Dragon, adulte (tous types)",
+    "type": "creature",
+    "rarity": "veryrare"
+  },
+  {
+    "id": "bile_dragon_vert_ancien",
+    "name": "Bile de Dragon vert, ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "corne_licorne",
+    "name": "Corne de Licorne",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_ancien",
+    "name": "Écaille de Dragon ancien (tous types)",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_noir_ancien",
+    "name": "Écaille de Dragon noir ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_bleu_ancien",
+    "name": "Écaille de Dragon bleu ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_vert_ancien",
+    "name": "Écaille de Dragon vert ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_rouge_ancien",
+    "name": "Écaille de Dragon rouge ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_blanc_ancien",
+    "name": "Écaille de Dragon blanc ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_airain_ancien",
+    "name": "Écaille de Dragon d'airain ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_cuivre_ancien",
+    "name": "Écaille de Dragon de cuivre ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_bronze_ancien",
+    "name": "Écaille de Dragon de bronze ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_argent_ancien",
+    "name": "Écaille de Dragon d'argent ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ecaille_dragon_or_ancien",
+    "name": "Écaille de Dragon d'or ancien",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "sang_dragon_ancien",
+    "name": "Sang de Dragon ancien (tous types)",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "ongle_geant_tempetes",
+    "name": "Ongle de Géant des tempêtes",
+    "type": "creature",
+    "rarity": "legendary"
+  },
+  {
+    "id": "plume_solar",
+    "name": "Plume de Solar",
+    "type": "creature",
+    "rarity": "legendary"
+  }
+]

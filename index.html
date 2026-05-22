@@ -9,57 +9,56 @@
 </head>
 <body>
 
-    <!-- HEADER & FILTRES GLOBACUX -->
+    <!-- HEADER & GLOBAL FILTERS -->
     <header class="main-header">
         <h1>Alchimax</h1>
         <div class="filter-container">
             <span class="filter-label">Filtres :</span>
             <button class="btn-filter active" data-filter="all">Tous</button>
-            <button class="btn-filter" data-filter="alchimie">Alchimie</button>
-            <button class="btn-filter" data-filter="herboristerie">Herboristerie</button>
+            <button class="btn-filter" data-filter="alchemy">Alchimie</button>
+            <button class="btn-filter" data-filter="herbalism">Herboristerie</button>
             <button class="btn-filter" data-filter="poison">Poisons & Toxines</button>
         </div>
     </header>
 
-    <!-- NAVIGATION ENTRE LES DEUX MODES -->
+    <!-- NAVIGATION BETWEEN MODES -->
     <nav class="mode-navigation">
         <button class="btn-mode active" id="btn-mode-encyclo">📖 Encyclopédie des Recettes</button>
-        <button class="btn-mode" id="btn-mode-chaudron">🧪 Le Chaudron (Craft Inversé)</button>
+        <button class="btn-mode" id="btn-mode-cauldron">🧪 Le Chaudron</button>
     </nav>
 
-    <!-- CONTENEUR PRINCIPAL MUTABLE -->
+    <!-- MAIN APP CONTAINER -->
     <main class="app-container">
         
-        <!-- SECTION 1 : MODE ENCYCLOPÉDIE (Actif par défaut) -->
+        <!-- SECTION 1 : ENCYCLOPEDIA VIEW -->
         <section id="view-encyclopedia" class="view-section">
             <div class="grid-layout">
-                <!-- Liste gauche (générée en JS) -->
+                <!-- Left panel -->
                 <div class="list-panel" id="encyclo-list">
                     <h2>Rechercher une Recette</h2>
                     
-                    <!-- Barre de recherche rapide -->
+                    <!-- Search box -->
                     <div class="search-box">
                         <input type="text" id="search-potion" placeholder="Ex: Potion de soin, Feu grégeois...">
                     </div>
                     
-                    <!-- Filtre par rareté spécifique aux potions -->
+                    <!-- Rarity filter -->
                     <div class="sub-filters">
-                        <select id="select-rarete">
+                        <select id="select-rarity">
                             <option value="all">-- Toutes les raretés --</option>
-                            <option value="commun">Commun</option>
-                            <option value="peu-commun">Peu commun</option>
+                            <option value="common">Commun</option>
+                            <option value="uncommon">Peu commun</option>
                             <option value="rare">Rare</option>
-                            <option value="tres-rare">Très Rare</option>
+                            <option value="veryrare">Très Rare</option>
                         </select> 
                     </div>
 
-                    <!-- La liste des résultats, qui sera très courte grâce aux filtres -->
+                    <!-- Results container -->
                     <div id="encyclo-results-container" class="results-scroll">
-                        <!-- Généré par le JS : uniquement les titres des potions filtrées -->
                     </div>
                 </div>
 
-                <!-- LE VOICI DE RETOUR : Le panneau de prévisualisation droite -->
+                <!-- Right preview panel -->
                 <div class="preview-panel" id="encyclo-preview">
                     <div class="preview-placeholder">
                         <p>Sélectionnez un ingrédient ou une potion pour voir les détails.</p>
@@ -69,36 +68,35 @@
             </div>
         </section>
 
-        <!-- SECTION 2 : MODE CHAUDRON (Masqué au démarrage) -->
+        <!-- SECTION 2 : CAULDRON VIEW -->
         <section id="view-cauldron" class="view-section hidden">
             <div class="grid-layout">
-                <!-- Inventaire du joueur à gauche -->
+                <!-- Player inventory -->
                 <div class="list-panel" id="player-inventory">
                     <h2>Votre Inventaire</h2>
                     <p class="short-desc">Renseignez vos composants disponibles :</p>
                     
-                    <!-- RECHERCHE DE COMPOSANTS -->
+                    <!-- Ingredient search -->
                     <div class="search-box">
                         <input type="text" id="search-ingredient" placeholder="Rechercher un composant (ex: Lys, Venin)...">
                     </div>
                     
                     <div class="sub-filters">
-                        <select id="select-rarete-ingredient">
+                        <select id="select-rarity-ingredient">
                             <option value="all">-- Toutes les raretés --</option>
-                            <option value="commun">Commun</option>
-                            <option value="peu-commun">Peu commun</option>
+                            <option value="common">Commun</option>
+                            <option value="uncommon">Peu commun</option>
                             <option value="rare">Rare</option>
-                            <option value="tres-rare">Très Rare</option>
+                            <option value="veryrare">Très Rare</option>
                         </select> 
                     </div>
 
-                    <!-- Conteneur pour la liste des ingrédients avec compteurs -->
+                    <!-- Inventory inputs list -->
                     <div id="inventory-inputs-container" class="results-scroll">
-                        <!-- Généré en JS -->
                     </div>
                 </div>
                 
-                <!-- Résultats du craft à droite -->
+                <!-- Craft results -->
                 <div class="preview-panel" id="craft-results">
                     <h2>Résultats du Laboratoire</h2>
                     

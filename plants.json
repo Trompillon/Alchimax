@@ -1,0 +1,767 @@
+[
+  {
+    "id": "baies_buisson_ardent",
+    "name": "Baies de buisson ardent",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts",
+    "description": "Le buisson ardent ou Pyracantha est une plante de la famille des Rosacéae. Ses baies colorées rouge vif tranchent dans le paysage froid ou on les trouve.",
+    "uniqueEffect": "Manger une baie soigne 1pv."
+  },
+  {
+    "id": "baies_gel_eternel",
+    "name": "Baies de gel éternel",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Une baie bleu clair en forme de cœur de la taille d’une myrtille de la famille des Ericaceae, connue pour ses propriétés purifiantes. Les plantes sur lesquelles ces baies poussent sont totalement immunisées contre tout dommage causé par le gel, et sont connues pour leur abondance de fruits pendant les hivers rigoureux.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "baies_genevrier",
+    "name": "Baies de Genévrier",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Montagnes et collines",
+    "description": "On les trouve dans tout l'hémisphère nord, il possède des cônes bleu violacées ressemblant à des baies ainsi que des feuilles épineuses.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "brin_sauge_hiver",
+    "name": "Brin de sauge d’hiver",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Montagnes et collines",
+    "description": "Plante aromatique de la famille des Lamiacées, elle est très utilisé dans la cuisine, mais un herboriste qualifié lui connaît d'autres utilisations.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "ecorce_aulne_crispe",
+    "name": "Écorce d’Aulne crispé",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Lacs et rivières",
+    "description": "L'aulne crispé est un arbre qui supporte les plus grands froids, on l'appelle aussi \"Poivre des Dunes\"car ses feuilles, une fois pillés peuvent être utilisés en tant que condiment.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "ecorce_bouleau",
+    "name": "Écorce de Bouleau",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines",
+    "description": "On les trouve dans tout l'hémisphère nord. Son écorce est prisée par de nombreux métiers. Les cordonniers, menuisiers et même boulangers (le bois de bouleau brûle vite sans que sa flamme soit trop chaude et laisse très peu de cendres) l'utilisent. Les herboristes apprécient également son écorce pour ses vertus diurétiques et protectrices.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "ecorce_sapin",
+    "name": "Écorce de Sapin",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts",
+    "description": "On les trouve dans tout l'hémisphère nord. Ils supportent les froids les plus glaciaux. Son écorce entre dans la composition de potions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "fleur_viorne",
+    "name": "Fleur de viorne",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Montagnes et collines",
+    "description": "Ce sont des arbustes fréquemment plantés dans les jardins pour l'aspect décoratif de leurs fleurs et de leurs fruits, ces derniers étant souvent très appréciés par les oiseaux. Leurs fleurs et leurs baies entrent dans la composition de diverses potions et décoctions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "fruit_saule",
+    "name": "Fruit de Saule",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Lacs et rivières",
+    "description": "Ce fruit en forme de poivron possède de grandes propriétés aidant la digestion.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "giroflee_sauvage",
+    "name": "Giroflée sauvage",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Lacs et rivières",
+    "description": "Cette algue verte émeraude est trouvée sous l’eau et est toujours recouverte de petites bulles d’air, ce qui la rend facile à repérer pour un herboriste expérimenté.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "herbe_saint_christophe",
+    "name": "Herbe de saint christophe",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Zones urbaines",
+    "description": "Ces arbres forment des grappes de petites baies rouges et blanches densément emballées sans jamais fleurir. Bien qu’elles aient un goût délicieux, elles sont toxiques voire mortelles pour les enfants. En raison de leur croissance dans les zones urbaines, ces arbres tuent des dizaines d’enfants chaque année. On pense qu’ils sont une création de Cyric ou Beshaba.",
+    "uniqueEffect": "Ingérer une baie inflige 1d4 dégâts de poison."
+  },
+  {
+    "id": "herbe_frisee",
+    "name": "Herbe frisée",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines, Souterrains, Zones urbaines",
+    "description": "Avec ses feuilles blanches et vertes larges comme le doigt, l'herbe frisée pousse dans tous les climats et toutes les régions. Elle est à la base de nombreux baumes et potions diverses.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "langue_chat",
+    "name": "Langue de chat",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Cette plante herbacée de taille moyenne possède des grappes de petites fleurs violettes/blanches à cinq pétales qui mûrissent rapidement en gousses de la taille des figues. Les gousses ont une coque légèrement toxique qui révèle une pulpe à l’intérieur qui a un goût amer mais de grandes propriétés nutritionnelles.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "pois_feu",
+    "name": "Pois de feu",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Bien que les fleurs bleues pâles de cette plante puissent le suggérer, les gousses de cette petite arbuste sont brûlement épicées et recherchées comme épice dans certaines régions du monde.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "pomme_pin",
+    "name": "Pomme de Pin",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts",
+    "description": "Ils peuvent atteindre jusqu'à 60 mètres de haut. On les trouve uniquement dans les vastes forêts. L'écorce de ses \"pommes\" est utilisé dans la composition de baumes et de potions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "rameau_thym_sauvage",
+    "name": "Rameau de thym sauvage",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Montagnes et collines",
+    "description": "Plante aromatique de la famille des Lamiacées, elle est utilisé pour l'huile essentielle qu'on peut y récolter, ainsi que pour son parfum souvent utilisé dans l'encens.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "rosee_matin",
+    "name": "Rosée du matin",
+    "type": "vegetal",
+    "rarity": "common",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Cette plante pousse sous forme de grand arbuste ou petit arbre et semble se reproduire par le biais de systèmes racinaires, car elle n’a pas de fleurs de quelque sorte que ce soit. Les longues et étroites feuilles de cette plante sont utilisées dans les thés et la médecine.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "amanite_rouge",
+    "name": "Amanite rouge",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Souterrains",
+    "description": "Ce champignon à chapeau rouge peut atteindre la taille d’un petit plat. Il inflige 1d4 dégâts de poison lorsqu’il est ingéré, mais à petites doses, il peut être utilisé pour brasser des potions de guérison par un herboriste soigneux.",
+    "uniqueEffect": "Il inflige 1d4 dégâts de poison lorsqu’il est ingéré."
+  },
+  {
+    "id": "asperges_pre",
+    "name": "Asperges de pré",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Anthoceros punctatus ou asperges de pré est une mousse de la famille des Anthocerotaceae, elle perce la neige pour trouver le soleil et ressemble a des asperges. A ne pas confondre avec le perce-neige. Les herboristes l'utilisent pour ses qualités dans leurs préparations.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "belladone",
+    "name": "Belladone",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Lacs et rivières",
+    "description": "Une fleur noire et encre avec une tige violette. Elle inflige 1d4 dégâts de poison lorsqu’elle est ingérée et,en cas d’échec au jet de sauvegarde de Constitution DD10, elle inflige l’état empoisonné pendant 2d4 heures.",
+    "uniqueEffect": "1d4 dégâts de poison si ingérée, et DD10 Constitution pour éviter l'état empoisonné pendant 2d4 heures."
+  },
+  {
+    "id": "brindilles_muroosa",
+    "name": "Brindilles de Muroosa",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Montagnes et collines",
+    "description": "Ce buisson qui pousse dans les zones arides et glacées semble être totalement insensible au froid quelle que soit son intensité. On dit que si on le récolte, une naissance ou un décès aura lieu prochainement dans son entourage.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "chevrefeuille_hiver",
+    "name": "Chèvrefeuille d’hiver",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Montagnes et collines",
+    "description": "Arbuste qui fleurit en hiver, elle est connue pour son parfum et ses baies rouges comestibles qui entrent dans la composition des potions de soins.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "cire_saule",
+    "name": "Cire de Saule",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Lacs et rivières",
+    "description": "Il comprend plus de 300 espèces réparties dans les zones fraiches et humides des régions tempérés et froides de l'hémisphère nord. Sa cire hydrophobe est un des ingrédients de la potion de respiration aquatique.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "corne_puante",
+    "name": "Corne puante",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Souterrains",
+    "description": "Ce champignon violet a des tiges glissantes ressemblant à des tentacules et sent la chair en décomposition. Une créature qui mange ce champignon doit réussir un jet de sauvegarde de Constitution (DD 10). En cas de succès, la créature peut lancer Détection des Pensées à volonté pendant 1 minute, sans avoir besoin de composants matériels. En cas d’échec, la créature subit 1d6 de dégâts psychiques.",
+    "uniqueEffect": "Une créature qui mange ce champignon doit réussir un jet de sauvegarde de Constitution (DD 10). En cas de succès, la créature peut lancer Détection des Pensées à volonté pendant 1 minute, sans avoir besoin de composants matériels. En cas d’échec, la créature subit 1d6 de dégâts psychiques."
+  },
+  {
+    "id": "doigts_sorciere",
+    "name": "Doigts de sorcière",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Lacs et rivières",
+    "description": "Ces petites tubercules sont d’un vert pâle et maladif et ressemblent à des doigts longs. Lorsqu’ils sont séchés et réduits en poudre, ils dégagent une forte odeur et peuvent être utilisés comme ingrédients en potion.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "ecorce_epicea",
+    "name": "Écorce d’Épicéa",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Montagnes et collines",
+    "description": "Adapté aux climats froids et humides, on les trouvent uniquement dans des régions septentrionales. Ils poussent uniquement en montagne au dessus de 400m. Son écorce est utilisé par les herboristes",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "ecorce_meleze",
+    "name": "Écorce de Mélèze",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Montagnes et collines",
+    "description": "On les trouve dans tout l'hémisphère nord. Ils atteignent facilement de 20 à 45 mètres de haut et perdent leurs aiguilles en hiver. Son écorce entre dans la composition de potions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "feuilles_arkasu",
+    "name": "Feuilles d’Arkasu",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "On les trouve dans tout l'hémisphère nord. Ils supportent les froids les plus glaciaux. Ses feuilles, après traitement et une fois le suc extrait peut servir de poison s'il est enduit sur une arme.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "feuilles_olisuba",
+    "name": "Feuilles d’Olisuba",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines, Zones urbaines",
+    "description": "Ces feuilles séchées de l’arbre Olisuba, lorsqu’elles sont infusées pour faire un thé, peuvent aider un corps à se remettre d’une activité intense.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "fleur_cendres",
+    "name": "Fleur des cendres",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "Cette petite fleur est d’un rouge vif avec un centre jaune, et pousse habituellement dans des environnements chauds. Elle inflige 1d4 dégâts de feu lorsqu’elle est ingérée, mais peut être utilisée pour préparer de nombreuses potions liées au feu par un alchimiste compétent.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "herbe_acide",
+    "name": "Herbe acide",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines, Souterrains, Zones urbaines",
+    "description": "Cette herbe verte à longues feuilles a une odeur et un goût piquant. Elle est connue pour donner la nausée si on la respire directement. (jet de Constitution DD10 sous peine de vomir) Les alchimistes et herboristes l'utilisent.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "lichen_givre",
+    "name": "Lichen de givre",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines, Souterrains, Zones urbaines",
+    "description": "Un lichen aveuglément blanc qui pousse sur les roches, les sols, l'écorce des arbres, les murs de pierre et même sur d'autres plantes. On la trouve dans les régions froides.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "lys_flamme",
+    "name": "Lys de flamme",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "Nommée après ses fleurs rouges et oranges à sept feuilles dont les pétales pointent vers le ciel plutôt que vers les tiges vers le bas, ressemblant à une flamme. Lorsqu’elles sont utilisées avec précaution, ces fleurs peuvent être utilisées pour des mélanges curatifs, mais des doses élevées sont dangereuses.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "mousse_eau_douce",
+    "name": "Mousse d’eau douce",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Lacs et rivières",
+    "description": "Cette petite mousse a tendance à pousser aux abords des fleuves ou des lacs, elle supporte très bien les baisse de température et même le gel. Elle est utilisé notamment pour la potion de respiration aquatique.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "mousse_foudre",
+    "name": "Mousse de foudre",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines, Zones urbaines",
+    "description": "Cette mousse bleu clair pousse uniquement là où la foudre a frappé et produit une légère décharge électrique statique lorsqu’elle est touchée.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "oreille_judas",
+    "name": "Oreille de Judas",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Comestible mais insipide, ressemblant a des oreilles, on le trouve principalement collé aux arbres ou aux vielles souches. il entre dans la composition de diverses potions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "ortie_chantante",
+    "name": "Ortie chantante",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Lacs et rivières, Zone urbaines",
+    "description": "Cette vigne possède des poils acérés et piquants recouvrant sa surface. Une créature qui entre en contact avec ces poils doit faire un jet de sauvegarde de Sagesse (DD 15) ou être submergée par l’envie de hurler une chanson à tue-tête.",
+    "uniqueEffect": "Une créature qui entre en contact avec ces poils doit faire un jet de sauvegarde de Sagesse (DD 15) ou être submergée par l’envie de hurler une chanson à tue-tête."
+  },
+  {
+    "id": "perce_neige",
+    "name": "Perce neige",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines",
+    "description": "Plante dont la fleur perce la neige pour se nourrir des rayons du soleil, elle est utilisé dans les potions de résistance au froid mais également dans d'autres préparations.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "pied_mouton",
+    "name": "Pied de mouton",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts",
+    "description": "Comestibles et goûteux, il peut être également ajouté dans la compositions de certaines potions et décoctions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "pleurotte_huitre",
+    "name": "Pleurotte en huitre",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts",
+    "description": "Comestible bien que sa flacidité peut en rebouter certains, elle entre dans la composition de plusieurs potions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "racine_sang",
+    "name": "Racine de sang",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "A première vue, ces racines ressemblent beaucoup à des carottes pourpres, mais lorsqu’elles sont coupées ou brisées, elles exsudent un liquide rouge sang. Si elles sont correctement préparées, elles peuvent être utilisées comme teinture durable ou même comme colorant alimentaire. Cependant, une préparation impropre peut entraîner une irritation cutanée ou une intoxication alimentaire.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "racine_theki",
+    "name": "Racine de Theki",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "Cette racine épaisse a un goût amer mais est censée aider la santé digestive. Lorsque vous utilisez une action pour consommer une dose, vous avez l’avantage aux jets de sauvegarde contre les effets des substances toxiques ou empoisonnées pendant 1 heure.",
+    "uniqueEffect": "Ingéré, ll donne l’avantage aux jets de sauvegarde contre les effets des substances toxiques ou empoisonnées pendant 1heure"
+  },
+  {
+    "id": "rameau_orme",
+    "name": "Rameau d’Orme",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "Son bois est connu pour être aussi résistant que le chêne mais il est surtout apprécié des herboristes pour ses feuilles aux vertus curatives.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "rosee_acide",
+    "name": "Rosée acide",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Lacs et rivières",
+    "description": "Comme sa famille plus célèbre, les rosées de miel, la rosée acide est une plante carnivore, mais avec une piqûre plus forte. Ses gouttes dissolvent sa proie avec un acide collant au lieu d’enzymes dans le sirop. Étonnamment, l’acide a de grandes caractéristiques curatives une fois suffisamment dilué, aidant à fermer les plaies.",
+    "uniqueEffect": "Toucher les fleurs sans protection force la cible à faire un jet de sauvegarde de dextérité DD 13. En cas d’échec, la cible subit 1d6 dégâts d'acide."
+  },
+  {
+    "id": "sarcococca",
+    "name": "Sarcococca",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Montagnes et collines",
+    "description": "Arbuste qui fleurit en hiver, elle est connue pour son parfum et ses baies rouges comestibles qui entrent dans la composition des potions de soins.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "sedum_gel",
+    "name": "Sédum de gel",
+    "type": "vegetal",
+    "rarity": "uncommon",
+    "biomes": "Montagnes et collines, Zones urbaines",
+    "description": "Plante de la famille des Crassulacées, ses vertues alchimiques font de cette plante un élément utilisée à la fabrication de plusieurs potions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "aconit",
+    "name": "Aconit",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Cette fleur blanc-gris ne fleurit qu’à la pleine lune et à des altitudes élevées. On les trouve plutôt dans les régions froides et montagneuses. Les chiens détestent son odeur.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "amanite_arc_en_ciel",
+    "name": "Amanite arc en ciel",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Souterrains",
+    "description": "Même si son nom peut faire courir l’imagination, ce champignon ressemble à un champignon ordinaire, avec un chapeau marron, des lames noires et un pied blanc. Du moins, jusqu’à ce qu’il soit coupé. La chair exposée du chapeau est d’abord verte comme de la sauge, puis devient bleue claire avant de devenir un profond Bordeaux. La couleur du pied, quand à elle, va du bleu profond à un orange pâle après avoir été coupé ou déchiré.",
+    "uniqueEffect": "Manger ce champignon oblige le consommateur à faire un jet de sauvegarde de Sagesse DD 14. En cas d’échec, le consommateur devient confus pendant 30 minutes. Pendant cette période, le consommateur voit les couleurs bien plus intensément que d’habitude et les voit changer d’une nuance à l’autre."
+  },
+  {
+    "id": "amanite_lave",
+    "name": "Amanite de lave",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Souterrains",
+    "description": "L'Amanite de Lave est une espèce rare de champignon qui pousse uniquement dans les régions volcaniques et les terres embrasées par le feu. Sa silhouette imposante se dresse parmi les rochers noircis et la lave refroidie, ses capuchons ressemblant à des éclats de lave solidifiée émettant une lueur rougeoyante.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "barbe_grand_pere",
+    "name": "Barbe de grand-père",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Montagnes et collines, Zones urbaines",
+    "description": "Usnéa Barbata ou Barbe-de-grand-père est un lichen de la famille des Parmeliaceae, cette mousse pendouille aux branches des arbres comme des algues flottants aux vents. Elle est utilisée pour soigner les maladies de la peau, on dit également qu'elle peut soigner la calvitie.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "chapeau_mortuaire",
+    "name": "Chapeau mortuaire",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Lacs et rivières, Souterrains",
+    "description": "Bien que d’apparence ordinaire avec une tige mince et blanche et un chapeau blanc à brun clair, le chapeau mortuaire est dangereux.",
+    "uniqueEffect": "12 heures après l’ingestion du champignon ou d’un extrait de celui-ci, une créature doit réussir un jet de sauvegarde de Constitution DD 15 ou être empoisonnée. Une fois empoisonnée, la créature subit 2d8 dégâts de poison et souffre de douleurs d’estomac sévères qui durent 24 heures, il est empoisonné durant cette période. Si un antitoxine n’est pas pris pendant cette période, le foie de la créature commence à se dégrader, entraînant une jaunisse, et elle subit 1d10 dégâts de poison supplémentaire à la fin des 24heures."
+  },
+  {
+    "id": "clematite_argentee",
+    "name": "Clématite argentée",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines",
+    "description": "Plante grimpante, elle aime les milieux montagneux ou on peut la trouver principalement, elle possède de nombreuses vertus en herboristerie.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "feuilles_eldas",
+    "name": "Feuilles d’Eldas",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Montagnes et collines",
+    "description": "Plante de la famille des Theaceae, ses fines feuilles, une fois le suc extrait, produit un poison paralysant. L'arbuste ne pousse qu'en hauteur dans les montagnes.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "feuilles_nolina_rouge",
+    "name": "Feuilles de Nolina rouge",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Zones urbaines",
+    "description": "Plante de la famille des Asparagaceae, ses fines feuilles entrent dans la composition de différentes potions, ses fleurs attirent particulièrement les abeilles.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "giroflee_murailles",
+    "name": "Giroflée des murailles",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Montagnes et collines, Souterrains, Zones urbaines",
+    "description": "Plante de la famille des Brassicacées, elle pousse sur les murs et dans les rocailles, elle est utilisé dans plusieurs potions alchimiques.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "graine_orchidee_fantome",
+    "name": "Graine d’orchidée fantôme",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Montagnes et collines",
+    "description": "Elle est d'un blanc pâle, presque translucide, plus rarement, les orchidées produisent un petit bourgeon contenant une seule graine blanche. Il est bien connu pour ses propriétés étranges.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "hellebore_noire",
+    "name": "Héllébore noire",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Montagnes et collines",
+    "description": "Elle est utilisé par de nombreux artistes et poètes depuis longtemps pour les visions lyriques qu'elle provoque. Elle entre dans la composition de plusieurs potions.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "lys_reve",
+    "name": "Lys de rêve",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts",
+    "description": "Une fleur blanche, légèrement argentée à cinq pétales avec un parfum enivrant. Elle peut être trempée dans de l’eau chaude pour créer un liquide psychoactif qui sent et goûte comme votre boisson préférée.",
+    "uniqueEffect": "Une créature sous l’effet de la fleur de Lys de rêve est empoisonnée pendant 1 heure. Pendant cette période, la créature est immunisée contre la peur, et la première fois qu’elle tombe à 0 point de vie sans être tuée sur le coup, elle tombe à 1 point de vie à la place."
+  },
+  {
+    "id": "lysael_etoile",
+    "name": "Lysaël étoilé",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Zones urbaines",
+    "description": "Le Lysaël Étoilé est une plante mystique rare et précieuse, originaire des forêts anciennes où la magie est présente. Elle tire son nom de ses fleurs en forme d'étoile, qui brillent d'une lueur douce et argentée lorsqu'elles sont exposées à la lumière des étoiles. La plante elle-même est petite et délicate, avec des feuilles fines et dentelées d'un vert profond.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "menthe_chats",
+    "name": "Menthe des chats",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Lacs et rivières",
+    "description": "Plante de la famille des Lamiacées, appelée aussi Menthe à chats car elle est odorante et provoque un état euphorique sur les félins et notamment les chats.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "nid_oiseau",
+    "name": "Nid d’oiseau",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Zones urbaines",
+    "description": "Ce beau champignon en forme de coupe, d’une couleur bleu noir est extrêmement toxique, il est difficile à manquer sur le fond vert de son environnement, bien qu’il soit préférable de le laisser tranquille.",
+    "uniqueEffect": "Toucher ce champignon sans gants ou autre équipement de protection force la créature qui le touche à faire un jet de sauvegarde de Constitution DD 16. En cas d’échec, la créature subit 1d10 dégâts de poison."
+  },
+  {
+    "id": "parasol_fee",
+    "name": "Parasol des fées",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts",
+    "description": "Un tout petit champignon, bien que son chapeau bleu vif et son pied et ses lames blancs soient difficile à manquer. La nuit, leur bioluminescence les rend vraiment faciles à trouver. Ils sont des ingrédients clés dans de nombreuses potions et encres. Les récolter peut être fastidieux, puisque les fées les défendent souvent de ceux qui veulent les prendre.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "pied_bleu",
+    "name": "Pied bleu",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts",
+    "description": "Comestible recherché pour sa chair tendre et parfumée, c'est également un ingrédient recherché par beaucoup d'herboristes pour différentes qualités, les sorcières aiment particulièrement ce champignon qu'elles ajoutent à pratiquement toutes leur mixtures.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "racine_mandragore",
+    "name": "Racine de mandragore",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Souterrains",
+    "description": "Cette racine pâle tordue appartient à la famille des Solanaceae. Elle ressemble à un bébé humanoïde noueux.",
+    "uniqueEffect": "Râpée et ingérée (elle n'a quasiment pas de goût), elle inflige l’état empoisonné pendant 1 heure si on rate un jet de Sauvegarde Constitution DD16."
+  },
+  {
+    "id": "roseclat",
+    "name": "Roséclat",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "Le Roséclat est une plante magique élégante et enchanteresse, réputée pour ses fleurs d'un rose éclatant qui brillent comme des gemmes lorsqu'elles sont exposées à la lumière du soleil. C'est une plante très courante en féerie mais rare dans le plan matériel. Elle possède des propriétés magiques uniques.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "sarriette_pin",
+    "name": "Sarriette de Pin",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Montagnes et collines",
+    "description": "Plante de la famille des Lamiacées, elle est utilisé aussi bien à des fins gustatives en tant que condiment ou dans l'utilisation de certaines potions, notamment le philtre d'amour, ou des potions visant à raffermir une vigueur déclinante...",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "spores_fletrissement",
+    "name": "Spores de flétrissement",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Souterrains",
+    "description": "Des spores rouges vives provenant de Champignons de flétrissement poussent principalement dans les souterrains et sont commons en Ombreterre ou ils se regroupent en nombre.",
+    "uniqueEffect": "Une créature exposée à une forte dose de spores doit réussir un jet de sauvegarde de Constitution DD 16 ou être empoisonné pendant 3d6 minutes. Pendant que la créature est empoisonnée, elle éprouve les mêmes effets qu’elle le serait sous le sort Confusion. Un sort de restauration ou une dose d’antitoxine peut enlever l’effet."
+  },
+  {
+    "id": "seve_noire",
+    "name": "Sève noire",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Elle peut être fumée sous forme concentrée ou injectée directement dans le flux sanguin.",
+    "uniqueEffect": "Une créature soumise à une dose de sève noire ne peut être charmée ou effrayée pendant 1d6 heures, durée pendant laquelle elle aura un fort sentiment de bien-être et une confiance en soi à toute épreuve. Pour chaque dose de sève noire consommée, une créature doit réussir un jet de sauvegarde de Constitution DD 14 ou être empoisonnée pendant 2d4 heures - un effet qui se cumule avec de multiples doses."
+  },
+  {
+    "id": "trompette_anges",
+    "name": "Trompette des anges",
+    "type": "vegetal",
+    "rarity": "rare",
+    "biomes": "Bois et Forêts",
+    "description": "Son nom est basé sur la forme et la beauté de la fleur : d’un blanc pur et en forme de trompette avec des tiges jaunes. Cependant, c’est une plante dangereuse.",
+    "uniqueEffect": "Inhaler l’odeur directement de la fleur oblige un jet de sauvegarde de Sagesse DD 13. Un échec laisse la cible confuse pendant 1 minute. Pendant cette période, la cible ne peut pas se déplacer, prendre d’actions ou de réactions. Cette caractéristique a été utilisée dans des poisons pour paralyser les cibles ou rendre les esclaves plus dociles."
+  },
+  {
+    "id": "anthocerote_carmin",
+    "name": "Anthocérote carmin",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Lacs et rivières",
+    "description": "Cette mousse ressemble à une laitue de couleur rouge, mais le quidam qui jetterait un coup d’œil rapide avant de continuer sa route perdrait l'occasion de récolter une plante des plus rares et aux vertus de guérison des plus puissantes.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "aplectrelle_hiver",
+    "name": "Aplectrelle d’hiver",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts,",
+    "description": "C'est une plante extrêmement rare et prisée pour être un ingrédient universel, c'est à dire un ingrédient qui peut remplacer n'importe quel autre ingrédient végétal.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "coeur_nuit",
+    "name": "Cœur de la nuit",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Le Cœur de Nuit est une plante rare et vénéneuse, se développant généralement dans les endroits sombres et humides, tels que les forêts profondes ou les marécages ténébreux. Elle tire son nom de ses fleurs qui, lorsqu'elles s'ouvrent sous le clair de lune, révèlent un cœur noir profond, évoquant les ténèbres de la nuit.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "croc_dragon",
+    "name": "Croc de dragon",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Montagnes et collines",
+    "description": "Cette plante robuste a des feuilles épineuses et des fleurs rouges vives. Sa forme recourbée et sa taille lui ont donné ce surnom. Elle est souvent trouvée dans des régions sauvages et montagneuses, où elle est recherchée pour ses nombreuses propriétés.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "epine_argent",
+    "name": "Épine d’argent",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "Cette vigne épineuse est d’une couleur argentée pâle, et est aussi dure que le métal..",
+    "uniqueEffect": "Ramasser cette plante sans précaution occasionne 1d6 de dégâts perçants"
+  },
+  {
+    "id": "etoile_glaciers",
+    "name": "Étoile des glaciers",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Montagnes et collines",
+    "description": "Plante célèbre autant pour sa rareté que pour ses nombreuses vertus médicinales, elle pousse uniquement dans des environnements difficiles, en hauteur dans les montagnes et même dans les glaciers.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "frostem",
+    "name": "Frostem",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "La Frostem est une plante herbacée qui pousse exclusivement dans les régions arctiques et les terres gelées. La Frostem se distingue par ses feuilles étroites et argentées, qui sont couvertes de cristaux de glace étincelants. Elle a développé une adaptation unique pour survivre dans les environnements froids, en absorbant l'humidité de l'air pour créer une fine couche de givre protecteur autour de ses tiges et de ses feuilles. Elle parait donc entièrement gelée mais il n'en est rien.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "griffes_paresseuses",
+    "name": "Griffes paresseuses",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Cette liane grimpante a extrêmement longue vie et à croissance lente est nommée après ses fleurs également longues. Ils forment de grandes grappes de fleurs en forme de griffe, turquoises et légèrement fluorescentes, qui semblent fleurir pendant des années. Il a été théorisé que cette plante vit le temps àun rythme différent de celui du reste du monde. En raison de sa croissance lente, elle produit très peu de gousses de graines chaque année.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "hygrophore_blanc_neige",
+    "name": "Hygrophore blanc de neige",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts",
+    "description": "Cuphophyllus Virgineus ou Hygrophore blanc-de-neige est une espèce de champignons de la famille des Hygrophoraceae.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "lotus_noir",
+    "name": "Lotus noir",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Souterrains",
+    "description": "Le lotus noir est une plante extrêmement rare, elle ne pousse que dans l'obscurité la plus profonde. On ne connait pas vraiment les circonstances de sa pousse mais on en extrait un des poisons les plus virulents et mortel du monde connu.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "lumiflore_etheree",
+    "name": "Lumiflore éthérée",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Zones urbaines",
+    "description": "Cette orchidée rare pousse dans des endroits où les frontières entre les plans sont fragiles. Ses pétales délicats émettent une lueur douce, on dit qu'elle apparaît et fleurit pour apaiser les esprits qui n'ont pas pu rejoindre l'au-delà. Certains érudits pensent même qu'elle se superpose sur plusieurs plans en même temps.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "lumiere_hiver",
+    "name": "Lumière d’hiver",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts",
+    "description": "Aurum Caloplaca ou lumière d'hiver est une mousse de la famille des teloschistaceae, elle se fixe exclusivement sur des vieilles souches, on l'a reconnaît facilement grâce à sa couleur d'or. Ses vertus sont nombreuses.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "sylvebrume",
+    "name": "Sylvebrume",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "La sylvebrume appartient à la famille des Lamiaceae. Cette plante enchantée se trouve au plus profond de certaines forêts. Ses feuilles dégagent un brouillard ensorcelé et euphorisant pour les êtres humains.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "tabouret_fee",
+    "name": "Tabouret de fée",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Lacs et Rivières",
+    "description": "Ce petit champignon rose est le plus souvent trouvé dans les cercles de fées.",
+    "uniqueEffect": "Ingéré, il cause la cécité pendant 1 minute en cas d’échec d’un jet de sauvegarde de Constitution DD 20, ainsi que des hallucinations vives."
+  },
+  {
+    "id": "traque_lune",
+    "name": "Traque lune",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Bois et Forêts, Lacs et Rivières, Zones urbaines",
+    "description": "Cette fleur bleu pâle pousse en paire et ne fleurit que pendant la nuit, et elle a une lueur éthérée. La fleur émet une lumière faible sur 1,5 mètres lorsqu’elle fleurit et est souvent confondue avec des yeux brillants de loin. Elle est souvent associé à la déesse Séluné.",
+    "uniqueEffect": ""
+  },
+  {
+    "id": "tulipe_abysses",
+    "name": "Tulipe des abysses",
+    "type": "vegetal",
+    "rarity": "veryrare",
+    "biomes": "Souterrains",
+    "description": "Cette tulipe noire pousse dans les endroits les plus sombres et les plus sinistres du monde souterrain. Ses pétales exhalent un parfum enivrant qui peut rendre les êtres vivants inconscients, mais qui attire aussi les créatures des ténèbres.",
+    "uniqueEffect": ""
+  }
+]

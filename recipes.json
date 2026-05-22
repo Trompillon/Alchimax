@@ -1,0 +1,932 @@
+[
+  {
+    "id": "antitoxine",
+    "name": "Antitoxine",
+    "category": "herbalism",
+    "rarity": "common",
+    "description": "Une créature qui boit ce flacon de liquide obtient un avantage sur les jets de sauvegarde contre le poison pendant 1 heure. Il ne confère aucun avantage aux morts-vivants ou aux constructions.",
+    "permittedPlants": "baies_gel_eternel, baies_genevrier, ecorce_sapin, rosee_matin",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "baume_apaisant",
+    "name": "Baume apaisant",
+    "category": "herbalism",
+    "rarity": "common",
+    "description": "Un baume collant et malodorant qui peut être appliqué sur des blessures. Lorsque vous utilisez des dés de vie pour récupérer des points de vie en utilisant ce baume, vous récupérez 3 points de vie supplémentaires pour chaque dé de vie utilisé. Cet effet dure 1 heure après application. Appliquer un baume prend une minute.",
+    "permittedPlants": "fleur_viorne, fruit_saule, langue_chat, rosee_acide",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poivre_poivre",
+    "name": "Poivre poivré",
+    "category": "herbalism",
+    "rarity": "common",
+    "description": "Un en-cas bénéfique, ces petits mélanges ont un feu ardent et un craquement très satisfaisant. Manger un poivre poivré donne au consommateur 3 points de vie temporaires jusqu'au prochain repos long. (Non cumulatifs) Note : Chaque préparation octroie 5 Poivres Poivrés et peut être préparé avec le kit de cuisine également.",
+    "permittedPlants": "brin_sauge_hiver, pomme_pin, pois_feu, rosee_matin",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_parle_plante",
+    "name": "Potion de parle plante",
+    "category": "herbalism",
+    "rarity": "common",
+    "description": "Boire cela donne au buveur la capacité de communiquer avec les plantes pendant 10 minutes.",
+    "permittedPlants": "baies_genevrier, fleur_viorne, langue_chat, ortie_chantante",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_peau_ecorce",
+    "name": "Potion de peau d’écorce",
+    "category": "herbalism",
+    "rarity": "common",
+    "description": "Un personnage qui boit le liquide magique brun de ce flacon se voit bénéficier du sort peau d'écorce pendant une heure sans concentration.",
+    "permittedPlants": "ecorce_aulne_crispe, ecorce_bouleau, ecorce_sapin, ecorce_epicea, ecorce_meleze",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_soins",
+    "name": "Potion de soins",
+    "category": "herbalism",
+    "rarity": "common",
+    "description": "Un personnage qui boit le liquide magique rouge de ce flacon reprend 2d4 + 2 points de vie.",
+    "permittedPlants": "baies_buisson_ardent, baies_gel_eternel, herbe_frisee, rameau_thym_sauvage, amanite_rouge, chevrefeuille_hiver, rameau_orme, sarcococca, amanite_lave, feuilles_nolina_rouge, pied_bleu, sarriette_pin, anthocerote_carmin, etoile_glaciers, hygrophore_blanc_neige, lumiere_hiver",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "antitoxine_majeur",
+    "name": "Antitoxine majeure",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Cette potion donne au buveur un avantage sur les jets de sauvegarde contre les dégâts de poison ou contre l’état empoisonné pendant 8 heures. Pendant cette période, le buveur ne peut tomber à 0 point de vie à cause des dégâts de poison.",
+    "permittedPlants": "asperges_pre, herbe_acide, pleurotte_huitre, racine_theki",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "baume_feu",
+    "name": "Baume de feu",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Une pâte d’herbes orange utilisée pour aider les personnes à se remettre de maladies. Appliquer une dose de cette pâte donne à l’utilisateur un bonus d'1d4 sur le prochain jet de sauvegarde de Constitution, de Sagesse ou de Charisme pendant les 8 prochaines heures. Appliquer un baume prend une minute.",
+    "permittedPlants": "lys_flamme, perce_neige,racine_sang, racine_theki",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "elixir_vie_murgaxor",
+    "name": "Élixir de vie de Murgaxor",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Quiconque boit cette potion gagne l’avantage sur les jet de sauvegardes contre la mort pendant 24 heures.",
+    "permittedPlants": "lys_flamme, perce_neige, rameau_orme, sarcococca",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "liqueur_vie",
+    "name": "Liqueur de vie",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Boire cette potion vous donne 2d6+2 points de vie temporaires jusquau prochain repos long.",
+    "permittedPlants": "amanite_rouge, brindilles_muroosa, rameau_orme, sarcococca",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "lymphe_fletrissement",
+    "name": "Lymphe de flétrissement",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Une concoction amère chartreuse distillée à la base à partir d’un champignon souterrain. Le liquide vert maladif renferme des propriétés psychédéliques puissantes. Si la créature n’est ni une construction ni un mort-vivant, elle gagne un avantage sur les jets de sauvegarde d’Intelligence et de Sagesse, ainsi qu’une vulnérabilité aux dégâts psychiques pendant 1 heure après avoir consommé une dose de lymphe de flétrissement. Pour chaque dose consommée, la créature doit réussir un jet de sauvegarde de Constitution de DD 15 ou devenir empoisonnée pendant 1 heure. Les créatures mortes-vivantes qui consomment une dose de lymphe de flétrissement gagnent un avantage sur tous les jets de sauvegarde de Dextérité et sont immunisées contre l’état effrayé pendant 1 heure. Elles n'ont pas besoin d'effectuer de jet de sauvegarde Constituion.",
+    "permittedPlants": "brindilles_muroosa, herbe_acide, pied_mouton, barbe_grand_pere, spores_fletrissement",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_metamorphose",
+    "name": "Potion de Métamorphose",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Lorsque le récipient est ouvert, il revient à son apparence d’origine; une potion rose pâle avec des éclats d’argent en suspension. Boire cette potion permet au buveur de se servir du sort Modification d’apparence pendant 1 heure sans concentration.",
+    "permittedPlants": "asperges_pre, oreille_judas, sedum_gel, amanite_arc_en_ciel",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_soins_majeurs",
+    "name": "Potion de soins majeurs",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Un personnage qui boit le liquide magique rouge de ce flacon reprend 4d4 + 4 points de vie.",
+    "permittedPlants": "amanite_rouge, chevrefeuille_hiver, rameau_orme, sarcococca, amanite_lave, feuilles_nolina_rouge, pied_bleu, sarriette_pin, anthocerote_carmin, etoile_glaciers, hygrophore_blanc_neige, lumiere_hiver",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "the_energisant",
+    "name": "Thé énergisant",
+    "category": "herbalism",
+    "rarity": "uncommon",
+    "description": "Cette boisson élimine un niveau d’épuisement chez qui la boit. Le thé énergisant doit être fabriqué et infusé juste avant d'être bu, il ne peut pas être préparé à l'avance et réchauffé. Savourer un thé énergisant prend au minimum une minute.",
+    "permittedPlants": "rosee_matin, chevrefeuille_hiver, feuilles_olisuba, ortie_chantante, hygrophore_blanc_neige",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "elixir_reve",
+    "name": "Élixir de rêve",
+    "category": "herbalism",
+    "rarity": "rare",
+    "description": "Lorsque vous buvez cette potion avant de vous endormir, vos rêves vous montrent de vraies visions d’événements passés, présents ou futurs liés à une créature, un lieu ou un objet de votre choix. (Le DM détermine la nature et la durée de ces visions.)",
+    "permittedPlants": "doigts_sorciere, hellebore_noire, lys_reve, roseclat",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "elixir_sante",
+    "name": "Élixir de santé",
+    "category": "herbalism",
+    "rarity": "rare",
+    "description": "Lorsque vous buvez cette potion, elle guérit immédiatement toute maladie qui vous affecte et enlève les états de cécité, de surdité, de paralysie et d’empoisonnement. Il n’apporte aucun bénéfice aux morts-vivants ou aux constructions.",
+    "permittedPlants": "feuilles_nolina_rouge, giroflee_murailles, sarriette_pin, lumiflore_etheree",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_soins_superieurs",
+    "name": "Potion de soins supérieurs",
+    "category": "herbalism",
+    "rarity": "rare",
+    "description": "Un personnage qui boit le liquide magique rouge de ce flacon reprend 8d4 + 8 points de vie.",
+    "permittedPlants": "amanite_lave, feuilles_nolina_rouge, pied_bleu, sarriette_pin, anthocerote_carmin, etoile_glaciers, hygrophore_blanc_neige, lumiere_hiver",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_polymorphie",
+    "name": "Potion de polymorphie",
+    "category": "herbalism",
+    "rarity": "rare",
+    "description": "Boire cette potion permet à celui qui la boit de se servir du sort de Métamorphose sur lui-même pendant 1 heure sans concentration.",
+    "permittedPlants": "amanite_arc_en_ciel, barbe_grand_pere, lys_reve, lysael_etoile",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_reanimation",
+    "name": "Potion de réanimation",
+    "category": "herbalism",
+    "rarity": "rare",
+    "description": "Boire cette potion n’a aucun effet sur les créatures en vie, mais lorsqu’elle est versée dans la gorge d’une créature décédée dans la minute suivant son administration, elle la ranime, la ramenant à 1 PV. Cela ne fonctionne pas si la personne est morte de vieillesse et ne peut pas réparer des parties du corps manquantes. Ne fonctionne pas sur les morts-vivants et les constructions.",
+    "permittedPlants": "doigts_sorciere, graine_orchidee_fantome, lys_reve, racine_mandragore",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poudre_disparition",
+    "name": "Poudre de disparition",
+    "category": "herbalism",
+    "rarity": "rare",
+    "description": "Lorsque vous utilisez une action pour jeter la poussière dans l'air, vous et toute créature et objet dans un rayon de 3 mètres autour de vous devenez invisibles pour 2d4 minutes. La durée est la même pour tous les sujets, et la poussière est consommée lorsque sa magie prend effet. Si une créature affectée par la poussière attaque ou lance un sort, l'invisibilité se termine pour cette créature",
+    "permittedPlants": "mousse_foudre, amanite_arc_en_ciel, graine_orchidee_fantome, lysael_etoile",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "repos_bouteille",
+    "name": "Repos en bouteille",
+    "category": "herbalism",
+    "rarity": "rare",
+    "description": "Boire cette potion accorde les effets d'un repos long complet pour celui qui la boit. On ne peut consommer un repos en bouteille pour remplacer une nuit de sommeil qu'une fois tous les 10 jours.",
+    "permittedPlants": "doigts_sorciere, pied_bleu, menthe_chats, lysael_etoile",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_protection",
+    "name": "Potion de protection",
+    "category": "herbalism",
+    "rarity": "veryrare",
+    "description": "Boire cette potion accorde au buveur une immunité à tous les effets de statut à l’exception de : à terre, agrippé, entravé ou inconscient pendant 1 heure.",
+    "permittedPlants": "croc_dragon, lumiere_hiver, sylvebrume, tulipe_abysses",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_regeneration",
+    "name": "Potion de régénération",
+    "category": "herbalism",
+    "rarity": "veryrare",
+    "description": "Après l’avoir bue, le consommateur gagne 2d10 PV perdus au début de son tour pendant 1 minute. Son effet de guérison est si puissant qu'il peut faire régénérer un membre perdu.",
+    "permittedPlants": "croc_dragon, etoile_glaciers, lumiflore_etheree, traque_lune",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_soins_supremes",
+    "name": "Potion de soins suprêmes",
+    "category": "herbalism",
+    "rarity": "veryrare",
+    "description": "Un personnage qui boit le liquide magique rouge de ce flacon reprend 10d4 + 20 points de vie.",
+    "permittedPlants": "croc_dragon, griffes_paresseuses, tabouret_fee, tulipe_abysses",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "potion_vitalite",
+    "name": "Potion de vitalité",
+    "category": "herbalism",
+    "rarity": "veryrare",
+    "description": "Boire cette potion élimine tout épuisement chez le buveur et guérit les maladies et/ou poisons qui l'affecte. Pendant les 24 prochaines heures, il est immunisé aux maladies et aux poisons, les dès de vie qu'il lance pendant ses repos ont une valeur maximale et tout soin magique qu'il reçoit durant cette période à également une valeur maximale.",
+    "permittedPlants": "anthocerote_carmin, etoile_glaciers, hygrophore_blanc_neige, lumiere_hiver",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poudre_reincarnation",
+    "name": "Poudre de réincarnation",
+    "category": "herbalism",
+    "rarity": "veryrare",
+    "description": "Lorsque cette petite poche de poussière violette est saupoudrée sur un humanoïde mort ou sur un morceau d’un humanoïde mort, la poussière est absorbée par les restes. Si la créature décédée le souhaite, elle revient à la vie avec un nouveau corps, comme si le sort de Réincarnation avait été lancé sur les restes.",
+    "permittedPlants": "croc_dragon, etoile_glaciers, hygrophore_blanc_neige, lumiflore_etheree",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poison_basique",
+    "name": "Poison basique",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 10 ou subir 1d4 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "herbe_saint_christophe, belladone",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poison_crapaud_geant",
+    "name": "Poison de crapaud géant",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "salive_crapaud_geant",
+    "Other": ""
+  },
+  {
+    "id": "sang_factice",
+    "name": "Sang factice",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "racine_sang, racine_sang",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "venin_araignee_geante",
+    "name": "Venin d’araignée géante",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "glande_venin_araignee_geante",
+    "Other": ""
+  },
+  {
+    "id": "venin_araignee_loup_geante",
+    "name": "Venin d’araignée-loup géante",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "glande_venin_araignee_loup_geante",
+    "Other": ""
+  },
+  {
+    "id": "venin_guêpe_geante",
+    "name": "Venin de guêpe géante",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "dard_guepe_geante",
+    "Other": ""
+  },
+  {
+    "id": "venin_scolopendre_geant",
+    "name": "Venin de scolopendre géant",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "glande_venin_scolopendre_geant",
+    "Other": ""
+  },
+  {
+    "id": "venin_serpent_venimeux_geant",
+    "name": "Venin de serpent venimeux géant",
+    "category": "poison",
+    "rarity": "common",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "glande_venin_serpent_venimeux_geant",
+    "Other": ""
+  },
+  {
+    "id": "mucus_charognard_rampant",
+    "name": "Mucus de charognard rampant",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit effectuer un jet de sauvegarde de Constitution DD 13 ou être empoisonné pendant 1 minute. La cible est également paralysée et peut tenter de réussir son jet de sauvegarder à la fin de ses tours, annulant l'effet sur une réussite. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "mucus_charognard_rampant",
+    "Other": ""
+  },
+  {
+    "id": "philtre_amour",
+    "name": "Philtre d’amour",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "La première créature que vous rencontrez dans les 10 minutes qui suivent l’absorption de ce philtre vous laisse charmé pendant 1 heure. Si la créature est d’une race et d’un sexe qui vous attire en temps normal, vous la considérez comme votre véritable amour tant que vous êtes charmé.",
+    "permittedPlants": "sarriette_pin",
+    "permittedCreatures": "meche_cheveux_aimer",
+    "Other": ""
+  },
+  {
+    "id": "poison_ettercap",
+    "name": "Poison d’ettercap",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "glande_venin_ettercap",
+    "Other": ""
+  },
+  {
+    "id": "potion_poison",
+    "name": "Potion de poison",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Si vous la buvez, vous subissez 3d6 dégâts de poison et vous devez réussir un jet de sauvegarde de Constitution DC 13 ou être empoisonné. Au début de chacun de vos tours tant que vous êtes empoisonné de cette manière, vous subissez 3d6 dégâts de poison.",
+    "permittedPlants": "herbe_saint_christophe",
+    "permittedCreatures": "",
+    "Other": "Potion_soins"
+  },
+  {
+    "id": "salive_cockatrice",
+    "name": "Salive de cockatrice",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit effectuer un jet de sauvegarde de Constitution DD 11 ou être pétrifié. En cas d'échec, la magie commence à transformer la créature en pierre, et celle-ci est entravée. Elle doit retenter le jet de sauvegarde à la fin de son tour. En cas de réussite, l'effet se termine. En cas d'échec, la créature est pétrifiée pendant 24 heures. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "salive_cockatrice",
+    "Other": ""
+  },
+  {
+    "id": "sang_assassin",
+    "name": "Sang d’assassin",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Une créature soumise à ce poison doit réussir un jet de sauvegarde de Constitution DD 12. En cas d’échec, elle subit (1d12) dégâts de poison et est empoisonnée pendant 24 heures. En cas de réussite, la créature subit la moitié des dégâts et n’est pas empoisonnée.",
+    "permittedPlants": "belladone, racine_sang",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "serum_verite",
+    "name": "Sérum de vérité",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée pendant 1 heure. La créature empoisonnée ne peut pas dire sciemment de mensonge, comme si elle était sous l’effet d’un sort de Zone de vérité. Tout comme le sort, elle peut cependant rester évasif dans ses propos voire s'abstenir de parler.",
+    "permittedPlants": "corne_puante",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "seve_arkasu",
+    "name": "Sève d’arkasu",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Une créature touchée par une arme ou une munition empoisonnée doit réussir un jet de sauvegarde de Constitution DD 14 ou prendre 2d4 dégâts de poison.",
+    "permittedPlants": "feuilles_arkasu",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "venin_grell",
+    "name": "Venin paralysant de grell",
+    "category": "poison",
+    "rarity": "uncommon",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit effectuer un jet de sauvegarde de Constitution DD 11 ou être empoisonné pendant 1 minute. La cible est également paralysée et peut tenter de réussir son jet de sauvegarder à la fin de ses tours, annulant l'effet sur une réussite. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "sac_venin_grell",
+    "Other": ""
+  },
+  {
+    "id": "concoction_eldas",
+    "name": "Concoction d’eldas",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Une créature sujette à ce poison doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée pendant 1 minute. La créature est également paralysée tant qu'elle est empoisonnée. La créature peut effectuer un nouveau jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'état paralysé sur elle-même en cas de réussite.",
+    "permittedPlants": "feuilles_eldas",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "fumee_othur",
+    "name": "Fumée d’othur",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 14 ou subir (3d6) dégâts de poison, il doit répéter le jet de sauvegarde au début de chacun de ses tours. À chaque échec de sauvegarde successif, le personnage subit (1d6) dégâts de poison. Les jets se succèdent round après round jusqu'à ce que la créature réussisse trois succès à ses jets de sauvegarde auquel cas le poison prend fin.",
+    "permittedPlants": "nid_oiseau",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "huile_aconit",
+    "name": "Huile d’aconit",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonnée pendant 24 heures. La créature empoisonnée est inconsciente. La créature se réveille si elle subit des dégâts.",
+    "permittedPlants": "aconit",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poison_wiverne",
+    "name": "Poison de wiverne",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 15 ou subir 3d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "dard_wiverne",
+    "Other": ""
+  },
+  {
+    "id": "poison_drow",
+    "name": "Poison drow",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Ce poison est généralement fabriqué uniquement par les drows, et doit être conservé et utilisé uniquement dans un endroit éloigné de la lumière du soleil. Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonné pendant 1 heure. Si le jet de sauvegarde échoue de 5 ou plus, la créature est également inconsciente pendant cette période. La créature se réveille si elle subit des dégâts ou si une autre créature effectue une action pour la réveiller.",
+    "permittedPlants": "racine_mandragore, seve_noire",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poudre_diable",
+    "name": "Poudre du diable",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Une fine poudre rouge avec un arôme légèrement fumé, cette poudre doit être soufflée dans le visage de la cible avant de se disperser sans danger dans l’air. La cible doit effectuer un jet de sauvegarde de Charisme DD 18. En cas d’échec, la cible perçoit une version altérée de la réalité où elle voit le monde comme un paysage infernal peuplé de créatures immondes, et devient extrêmement vulnérable à l’intimidation, aux formes agressives de persuasion et à la tromperie pendant 1 heure.",
+    "permittedPlants": "spores_fletrissement, trompette_anges",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "teinture_pale",
+    "name": "Teinture pâle",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Une créature soumise à ce poison doit réussir un jet de sauvegarde de Constitution DD 15 ou subir (1d6) dégâts de poison et être empoisonnée pendant 24h. La créature doit répéter le jet de sauvegarde toutes les 24 heures, prenant (1d6) dégâts de poison et subissant l'état empoisonné en cas d’échec. Après trois jets de sauvegarde réussi, l’effet prend fin.",
+    "permittedPlants": "chapeau_mortuaire, seve_noire",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "venin_scorpion_geant",
+    "name": "Venin de scorpion géant",
+    "category": "poison",
+    "rarity": "rare",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 12 ou subir 2d10 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher",
+    "permittedPlants": "",
+    "permittedCreatures": "dard_scorpion_geant",
+    "Other": ""
+  },
+  {
+    "id": "bile_dragon_vert",
+    "name": "Bile de dragon vert",
+    "category": "poison",
+    "rarity": "veryrare",
+    "description": "Une créature sujette à ce poison doit effectuer un jet de sauvegarde de Constitution DD 22, devenant empoisonnée pour 1 heure et subissant (10d8) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
+    "permittedPlants": "",
+    "permittedCreatures": "bile_dragon_vert_adulte, bile_dragon_vert_ancien",
+    "Other": ""
+  },
+  {
+    "id": "extrait_lotus_noir",
+    "name": "Extrait de lotus noir",
+    "category": "poison",
+    "rarity": "veryrare",
+    "description": "Une créature sujette à ce poison doit effectuer un jet de sauvegarde de Constitution DD 20, subissant (10d10) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
+    "permittedPlants": "lotus_noir",
+    "permittedCreatures": "oeil_basilic",
+    "Other": ""
+  },
+  {
+    "id": "malediction_basilic",
+    "name": "Malédiction du basilic",
+    "category": "poison",
+    "rarity": "veryrare",
+    "description": "Une créature sujette à ce poison doit réussir un jet de sauvegarde de Constitution DD 13 ou être pétrifiée. À chaque tour suivant, la créature peut effectuer un nouveau jet de sauvegarde pour mettre fin à l'effet de manière anticipée. Si la créature rate 3 jets de sauvegarde consécutifs, elle est pétrifiée et ne peut plus lancer de nouveaux jets de sauvegarde.",
+    "permittedPlants": "trompette_anges",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "larmes_nuit",
+    "name": "Larmes de la nuit",
+    "category": "poison",
+    "rarity": "veryrare",
+    "description": "Une créature sujette à ce poison doit réussir un jet de sauvegarde de Constitution DD 18 ou subir 6d8 dégâts de poison. Il prend la moitié des dégâts en cas de réussite et l'effet du poison s'arrêtera là. S'il échoue, il devra retenter le même jet de sauvegarde au début de son tour subissant 3d8 dégâts de poison à nouveau. Une fois que la créature réussit un jet de sauvegarde contre ce poison, elle devient immunisé à ses effets pendant les prochaines 24heures.",
+    "permittedPlants": "coeur_nuit",
+    "permittedCreatures": "",
+    "Other": ""
+  },
+  {
+    "id": "poison_ver_pourpre",
+    "name": "Poison de ver pourpre",
+    "category": "poison",
+    "rarity": "veryrare",
+    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 19 ou subir 6d6 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "permittedPlants": "",
+    "permittedCreatures": "dard_ver_pourpre",
+    "Other": ""
+  },
+  {
+    "id": "acide",
+    "name": "Acide",
+    "category": "alchemy",
+    "rarity": "common",
+    "description": "Au prix d'une action, vous pouvez lancer le contenu de ce flacon sur une créature à 1 case (1,50 mètre) ou moins de vous, ou jeter le flacon jusqu'à 4 cases (6 mètres), le brisant à l'impact. Dans les deux cas, faire une attaque à distance contre une créature ou un objet, en considérant l'acide comme une arme improvisée. En cas de succès, la cible reçoit 2d6 dégâts d'acide.",
+    "permittedPlants": "rosee_acide, herbe_acide",
+    "permittedCreatures": "residu_vase, glande_venin_serpent_venimeux, lymphe_otyugh",
+    "Other": ""
+  },
+  {
+    "id": "feu_gregeois",
+    "name": "Feu grégeois",
+    "category": "alchemy",
+    "rarity": "common",
+    "description": "Ce liquide adhésif et collant s'enflamme lorsqu'il est exposé à l'air. Au prix d'une action, vous pouvez jeter cette flasque jusqu'à 4 cases (6 mètres), la brisant à l'impact. Faire une attaque à distance contre une créature ou un objet, en considérant le feu grégeois comme une arme improvisée. En cas de succès, la cible reçoit 1d4 dégâts de feu au début de chacun de ses tours. Une créature peut mettre fin à ces dégâts en utilisant son action pour faire un jet de Dextérité DD 10 pour éteindre les flammes.",
+    "permittedPlants": "pois_feu, fleur_cendres, lys_flamme",
+    "permittedCreatures": "huile_baleine, glande_punaise_feu, oeil_magmatique, essence_elementaire_feu_mineur, essence_elementaire_feu, ecaille_serpent_feu",
+    "Other": ""
+  },
+  {
+    "id": "parfum_envoutant",
+    "name": "Parfum envoûtant",
+    "category": "alchemy",
+    "rarity": "common",
+    "description": "Ce petit flacon contient du parfum magique, suffisant pour une utilisation. Vous pouvez utiliser une action pour vous appliquer le parfum, et son effet dure 1heure. Pendant la durée, vous avez l’avantage sur tous les jets de Charisme sur des humanoïdes FP 1 ou moins. Ceux qui sont soumis à l’effet du parfum ne sont pas conscients qu’ils ont été influencés par magie.",
+    "permittedPlants": "brin_sauge_hiver, rameau_thym_sauvage, corne_puante",
+    "permittedCreatures": "meche_cheveux_dryade, plume_harpie, poussiere_pixie, meche_cheveux_belle_femme, corne_succube",
+    "Other": ""
+  },
+  {
+    "id": "potion_escalade",
+    "name": "Potion d’escalade",
+    "category": "alchemy",
+    "rarity": "common",
+    "description": "Lorsque vous buvez cette potion, vous gagnez une vitesse d'escalade égale à votre vitesse de marche pendant 1 heure. Pendant cette période, vous avez l'avantage sur les tests de Force (Athlétisme) que vous faites pour grimper.",
+    "permittedPlants": "fruit_saule, giroflee_sauvage, pomme_pin",
+    "permittedCreatures": "poils_araignee_loup_geante, soie_araignee_geante, bec_grick, langue_gorille",
+    "Other": ""
+  },
+  {
+    "id": "potion_nage",
+    "name": "Potion de nage",
+    "category": "alchemy",
+    "rarity": "common",
+    "description": "Lorsque vous buvez cette potion, vous gagnez une vitesse de nage égale à votre vitesse de marche pendant 1 heure. Pendant ce temps, vous avez l’avantage sur les jets de sauvegarde de Force (Athlétisme) que vous effectuez pour nager.",
+    "permittedPlants": "mousse_eau_douce, fruit_saule",
+    "permittedCreatures": "ecailles_poisson, tentacule_pieuvre, branchies_kuo_toa, branchies_sahuagin, dent_requin",
+    "Other": ""
+  },
+  {
+    "id": "huile_insaisissabilite",
+    "name": "Huile d’insaisissabilité",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Cette huile peut couvrir une créature de taille moyenne ou plus petite, ainsi que l’équipement qu’elle porte et transporte (une fiole supplémentaire est nécessaire pour chaque catégorie de taille au-dessus de moyenne). L’application de l’huile prend 10 minutes. La créature affectée obtient alors l'avantage aux tests pour échapper à un d'agrippement pendant 8 heures. Alternativement, l’huile peut être versée sur le sol en tant qu’action, où elle couvre un carré de 3 mètres de coté, dupliquant l’effet du sort de graisse dans cette zone pendant 8 heures.",
+    "permittedPlants": "oreille_judas, pied_mouton",
+    "permittedCreatures": "mucus_charognard_rampant, essence_elementaire_eau_mineur, essence_elementaire_eau, huile_baleine",
+    "Other": ""
+  },
+  {
+    "id": "potion_agrandissement",
+    "name": "Potion d’agrandissement",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Lorsque vous buvez cette potion, vous obtenez l’effet “agrandissement” du sort d’Agrandir/Rétrécir pendant 1d4 heure (aucune concentration requise).",
+    "permittedPlants": "oreille_judas, lichen_givre",
+    "permittedCreatures": "poils_araignee_loup_geante, ongle_geant,  sang_troll, ecaille_dragonnet, ecaille_dragon_jeune, ecaille_dragon_adulte, ecaille_dragon_ancien",
+    "Other": ""
+  },
+  {
+    "id": "potion_amitie_aminaux",
+    "name": "Potion d’amitié avec les animaux",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous pouvez lancer le sort amitié avec les animaux (sauvegarde DD 13) pendant 1 heure à volonté.",
+    "permittedPlants": "langue_chat, pied_mouton",
+    "permittedCreatures": "griffes_chat, touffe_poils_ecureuil, plume_oiseau, ecailles_poisson, griffes_ours, serre_aigle",
+    "Other": ""
+  },
+  {
+    "id": "potion_force_geant_collines",
+    "name": "Potion de force de géant des collines",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Lorsque vous buvez cette potion, votre score de Force passe à 21 pendant 1 heure. La potion n'a aucun effet sur vous si votre Force est supérieure ou égale à ce score.",
+    "permittedPlants": "lichen_givre, giroflee_murailles",
+    "permittedCreatures": "ongle_geant_collines, griffes_ours, coeur_golem_chair",
+    "Other": ""
+  },
+  {
+    "id": "potion_mana_mineure",
+    "name": "Potion de mana mineure",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Après avoir bu cette potion, l’utilisateurrécupère 2 emplacements de sorts similairement à la restauration magique du magicien ou récupère 2 points de sorcellerie (ensorceleur).",
+    "permittedPlants": "parasol_fee, epine_argent, sedum_gel",
+    "permittedCreatures": "ecaille_dragonnet, ecaille_dragon_jeune, ecaille_dragon_adulte, ecaille_dragon_ancien, meche_cheveux_dryade, bec_cockatrice, oeil_vissepince, essence_feu_follet, oeil_basilic, oeil_beholder, oeil_nothic, tentacule_flagelleur_mental",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_acide",
+    "name": "Potion de résistance à l’acide",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts d’acide pendant une heure.",
+    "permittedPlants": "rosee_acide",
+    "permittedCreatures": "mucus_charognard_rampant, lymphe_otyugh, residu_pouding_noir, ecaille_dragon_noir_dragonnet, ecaille_dragon_noir_jeune, ecaille_dragon_noir_adulte, ecaille_dragon_noir_ancien, ecaille_dragon_cuivre_dragonnet, ecaille_dragon_cuivre_jeune, ecaille_dragon_cuivre_adulte, ecaille_dragon_cuivre_ancien",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_froid",
+    "name": "Potion de résistance au froid",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts de froid pendant une heure.",
+    "permittedPlants": "lichen_givre, perce_neige, sedum_gel, frostem",
+    "permittedCreatures": "croc_loup_arctique, ichor_remorhaz, glande_salamandre_givre, ecaille_dragon_blanc_dragonnet, ecaille_dragon_blanc_jeune, ecaille_dragon_blanc_adulte, ecaille_dragon_blanc_ancien, ecaille_dragon_argent_dragonnet, ecaille_dragon_argent_jeune, ecaille_dragon_argent_adulte, ecaille_dragon_argent_ancien,touffe_poils_yeti",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_feu",
+    "name": "Potion de résistance au feu",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts de feu pendant une heure.",
+    "permittedPlants": "fleur_cendres, lys_flamme",
+    "permittedCreatures": "ecaille_serpent_feu, essence_elementaire_feu_mineur, essence_elementaire_feu, glande_salamandre, ecaille_dragon_rouge_dragonnet, ecaille_dragon_rouge_jeune, ecaille_dragon_rouge_adulte, ecaille_dragon_rouge_ancien, ecaille_dragon_airain_dragonnet, ecaille_dragon_airain_jeune, ecaille_dragon_airain_adulte, ecaille_dragon_airain_ancien, ecaille_dragon_or_dragonnet, ecaille_dragon_or_jeune, ecaille_dragon_or_adulte, ecaille_dragon_or_ancien",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_force",
+    "name": "Potion de résistance à la force",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts de force pendant une heure.",
+    "permittedPlants": "ecorce_epicea, giroflee_murailles",
+    "permittedCreatures": "salive_crapaud_geant, oeil_ogre, sang_troll, ecaille_dragon_bleu_dragonnet, ecaille_dragon_bleu_jeune, ecaille_dragon_bleu_adulte, ecaille_dragon_bleu_ancien",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_foudre",
+    "name": "Potion de résistance à la foudre",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts de foudre pendant une heure.",
+    "permittedPlants": "mousse_foudre, ecorce_epicea",
+    "permittedCreatures": "ichor_behir, ecaille_dragon_bleu_dragonnet, ecaille_dragon_bleu_jeune, ecaille_dragon_bleu_adulte, ecaille_dragon_bleu_ancien, ecaille_dragon_bronze_dragonnet, ecaille_dragon_bronze_jeune, ecaille_dragon_bronze_adulte, ecaille_dragon_bronze_ancien",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_necrotique",
+    "name": "Potion de résistance au nécrotique",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts nécrotiques pendant une heure.",
+    "permittedPlants": "fleur_cendres, belladone",
+    "permittedCreatures": "phalange_squelette, sang_zombi, mucus_charognard_rampant, spores_moisissure_violette",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_poison",
+    "name": "Potion de résistance au poison",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts de poison pendant une heure.",
+    "permittedPlants": "belladone, pleurotte_huitre, racine_theki",
+    "permittedCreatures": "ecaille_dragon_vert_dragonnet, ecaille_dragon_vert_jeune, ecaille_dragon_vert_adulte, ecaille_dragon_vert_ancien",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_psychique",
+    "name": "Potion de résistance au psychique",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts psychiques pendant une heure.",
+    "permittedPlants": "corne_puante, doigts_sorciere",
+    "permittedCreatures": "tentacule_flagelleur_mental, tentacule_flumph, oeil_nothic",
+    "Other": ""
+  },
+  {
+    "id": "potion_resistance_radiant",
+    "name": "Potion de résistance au radiant",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts radiants pendant une heure.",
+    "permittedPlants": "herbe_acide, rosee_matin, clematite_argentee",
+    "permittedCreatures": "poussiere_pixie, plume_pegase, plume_couatl, crin_licorne",
+    "Other": ""
+  },
+  {
+    "id": "postion_resistance_tonnerre",
+    "name": "Potion de résistance au tonnerre",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Quand vous buvez cette potion, vous gagnez une résistance aux dégâts de tonnerre pendant une heure.",
+    "permittedPlants": "ortie_chantante, feuilles_olisuba",
+    "permittedCreatures": "serre_aigle, essence_elementaire_air_mineur, essence_elementaire_air, ongle_geant_nuages",
+    "Other": ""
+  },
+  {
+    "id": "potion_respiration_aquatique",
+    "name": "Potion de respiration aquatique",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Vous pouvez respirer sous l'eau pendant 1 heure après avoir bu cette potion.",
+    "permittedPlants": "giroflee_sauvage, cire_saule, mousse_eau_douce",
+    "permittedCreatures": "essence_elementaire_eau_mineur, essence_elementaire_eau, branchies_kuo_toa, branchies_sahuagin, tentacule_pieuvre, tentacule_pieuvre_geante, dent_requin, dent_requin_geant",
+    "Other": ""
+  },
+  {
+    "id": "potion_souffle_enflamme",
+    "name": "Potion de souffle enflammé",
+    "category": "alchemy",
+    "rarity": "uncommon",
+    "description": "Après avoir bu cette potion, vous pouvez utiliser une action bonus pour expirer du feu sur une cible à 9 mètres ou moins de vous. La cible doit effectuer un jet de sauvegarde de Dextérité DD 13, subissant 4d6 dégâts de feu en cas d'échec, ou la moitié de ces dégâts en cas de réussite. L'effet se termine après avoir expiré du feu trois fois ou après une heure.",
+    "permittedPlants": "fleur_cendres, racine_sang",
+    "permittedCreatures": "poussiere_mephite_magmatique, essence_elementaire_feu_mineur, essence_elementaire_feu, ecaille_dragon_rouge_dragonnet, ecaille_dragon_rouge_jeune, ecaille_dragon_rouge_adulte, ecaille_dragon_rouge_ancien, ecaille_dragon_or_dragonnet, ecaille_dragon_or_jeune, ecaille_dragon_or_adulte, ecaille_dragon_or_ancien",
+    "Other": ""
+  },
+  {
+    "id": "potion_heroisme",
+    "name": "Potion d'héroïsme",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Après avoir bu cette potion, vous gagnez 10 points de vie temporaires qui durent 1 heure. Durant tout ce temps, vous êtes sous l'effet du sort bénédiction (pas de concentration requise).",
+    "permittedPlants": "pied_bleu, clematite_argentee, menthe_chats",
+    "permittedCreatures": "sang_lion, ecaille_dragonnet, ecaille_dragon_jeune, ecaille_dragon_adulte, ecaille_dragon_ancien, crin_licorne, epine_manticore",
+    "Other": ""
+  },
+  {
+    "id": "potion_invulnerabilite",
+    "name": "Potion d'invulnérabilité",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Après avoir bu cette potion, vous avez une résistance à tous les dégâts durant 1 minute. Le liquide sirupeux de cette potion ressemble à du fer liquéfié.",
+    "permittedPlants": "clematite_argentee, menthe_chats, amanite_lave",
+    "permittedCreatures": "sang_troll, ecaille_dragonnet, ecaille_dragon_jeune, ecaille_dragon_adulte, ecaille_dragon_ancien, griffe_slaad, carapace_bulette",
+    "Other": ""
+  },
+  {
+    "id": "potion_clairvoyance",
+    "name": "Potion de clairvoyance",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Boire cette potion permet à celui qui la boit de se servir du sort de Clairvoyance sur lui-même pendant 1 heure sans concentration.",
+    "permittedPlants": "hellebore_noire, roseclat",
+    "permittedCreatures": "oeil_basilic, oeil_nothic, oeil_beholder, ectoplasme_fantome",
+    "Other": ""
+  },
+  {
+    "id": "potion_diminution",
+    "name": "Potion de diminution",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Lorsque vous buvez cette potion, vous bénéficiez de l'effet « rapetissement » du sort agrandissement/rapetissement pendant 1d4 heures (pas de concentration requise).",
+    "permittedPlants": "barbe_grand_pere, parasol_fee, roseclat",
+    "permittedCreatures": "oeil_bonnet_rouge, ongle_guenaude",
+    "Other": ""
+  },
+  {
+    "id": "potion_force_geant_givre",
+    "name": "Potion de force de géant du givre",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Lorsque vous buvez cette potion, votre score de Force passe à 23 pendant 1 heure. La potion n'a aucun effet sur vous si votre Force est supérieure ou égale à ce score.",
+    "permittedPlants": "lichen_givre, giroflee_murailles, amanite_lave",
+    "permittedCreatures": "ongle_geant_givre,  touffe_poils_yeti, poudre_defense_mammouth, glande_salamandre_givre",
+    "Other": ""
+  },
+  {
+    "id": "potion_force_geant_feu",
+    "name": "Potion de force de géant du feu",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Lorsque vous buvez cette potion, votre score de Force passe à 25 pendant 1 heure. La potion n'a aucun effet sur vous si votre Force est supérieure ou égale à ce score.",
+    "permittedPlants": "amanite_lave, lichen_givre",
+    "permittedCreatures": "ongle_geant_feu, glande_salamandre",
+    "Other": ""
+  },
+  {
+    "id": "potion_forme_gazeuse",
+    "name": "Potion de forme gazeuse",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Lorsque vous buvez cette potion, vous bénéficiez de l'effet du sort forme gazeuse pour 1 heure (pas de concentration requise) ou jusqu'à ce que vous mettiez fin à l'effet par une action bonus",
+    "permittedPlants": "doigts_sorciere, graine_orchidee_fantome, hellebore_noire",
+    "permittedCreatures": "ectoplasme_fantome, residu_spectre, essence_ombre",
+    "Other": ""
+  },
+  {
+    "id": "potion_lecture_pensees",
+    "name": "Potion de lecture des pensées",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Quand vous buvez cette potion, vous bénéficiez de l'effet du sort détection des pensées (sauvegarde DD 13)",
+    "permittedPlants": "corne_puante, graine_orchidee_fantome",
+    "permittedCreatures": "tentacule_flagelleur_mental, oeil_nothic, spores_myconide, mucus_aboleth",
+    "Other": ""
+  },
+  {
+    "id": "potion_mana",
+    "name": "Potion de mana",
+    "category": "alchemy",
+    "rarity": "rare",
+    "description": "Après avoir bu cette potion, l’utilisateurrécupère 4 emplacements de sorts similairement à la restauration magique du magicien ou récupère 4 points de sorcellerie (ensorceleur).",
+    "permittedPlants": "clematite_argentee, epine_argent, parasol_fee, lysael_etoile",
+    "permittedCreatures": "ecaille_dragon_jeune, ecaille_dragon_adulte, ecaille_dragon_ancien, oeil_beholder, oeil_nothic, tentacule_flagelleur_mental",
+    "Other": ""
+  },
+  {
+    "id": "elixir_jouvence",
+    "name": "Élixir de jouvence",
+    "category": "alchemy",
+    "rarity": "veryrare",
+    "description": "Lorsque vous buvez cette potion, votre âge physique est réduit de 1d6+6 années, jusqu’à un minimum de 13 ans. Chaque fois que vous buvez ultérieurement une potion de longévité, il y a une chance cumulative de 10 pour cent que vous vieillissiez plutôt de 1d6+6 années.",
+    "permittedPlants": "griffes_paresseuses, lumiere_hiver, sylvebrume",
+    "permittedCreatures": "plume_deva, plume_planetar, plume_solar, corne_licorne, sang_dragon_adulte, sang_dragon_ancien, plume_roc",
+    "Other": ""
+  },
+  {
+    "id": "huile_affutage",
+    "name": "Huile d’affûtage",
+    "category": "alchemy",
+    "rarity": "veryrare",
+    "description": "L’huile peut recouvrir une arme tranchante ou perforante, ou jusqu’à 5 pièces de munitions tranchantes ou perforantes. L’application de l’huile prend 1 minute. Pendant 1 heure, l’objet recouvert est magique et a un bonus de +3 aux jets d’attaque et de dégâts.",
+    "permittedPlants": "epine_argent, tulipe_abysses, frostem",
+    "permittedCreatures": "residu_pouding_noir, coeur_golem_pierre, coeur_golem_fer, mucus_aboleth, ecaille_behir",
+    "Other": ""
+  },
+  {
+    "id": "potion_invisibilite",
+    "name": "Potion d'invisibilité",
+    "category": "alchemy",
+    "rarity": "veryrare",
+    "description": "Lorsque vous la buvez, vous devenez invisible pendant 1 heure. Tout ce que vous portez ou transportez est invisible avec vous. L'effet prend fin prématurément si vous attaquez ou lancez un sort.",
+    "permittedPlants": "griffes_paresseuses, tabouret_fee, traque_lune, tulipe_abysses",
+    "permittedCreatures": "plume_sphinx, main_rakshasa, griffe_slaad_vert, griffe_nycaloth",
+    "Other": ""
+  },
+  {
+    "id": "potion_mana_superieure",
+    "name": "Potion de mana supérieure",
+    "category": "alchemy",
+    "rarity": "veryrare",
+    "description": "Après avoir bu cette potion, l’utilisateurrécupère 8 emplacements de sorts similairement à la restauration magique du magicien ou récupère 8 points de sorcellerie (ensorceleur).",
+    "permittedPlants": "epine_argent, parasol_fee, epine_argent, croc_dragon",
+    "permittedCreatures": "sang_dragon_adulte, sang_dragon_ancien, ichor_remorhaz,plume_sphinx",
+    "Other": ""
+  },
+  {
+    "id": "potion_vitesse",
+    "name": "Potion de vitesse",
+    "category": "alchemy",
+    "rarity": "veryrare",
+    "description": "Lorsque vous buvez cette potion, vous bénéficiez de l'effet du sort hâte pendant 1 minute (pas de concentration requise).",
+    "permittedPlants": "lumiere_hiver, tulipe_abysses, frostem",
+    "permittedCreatures": "crin_licorne,poussiere_vampire, oeil_diable_gele, plume_roc",
+    "Other": ""
+  },
+  {
+    "id": "potion_vol",
+    "name": "Potion de vol",
+    "category": "alchemy",
+    "rarity": "veryrare",
+    "description": "Lorsque vous buvez cette potion, votre obtenez une vitesse de vol égale à votre vitesse de marche pour une durée de 1 heure et pouvez flotter. Si l'effet de la potion se termine alors que vous êtes dans les airs, vous tombez, à moins de posséder un autre moyen de vous retenir en l'air.",
+    "permittedPlants": "tabouret_fee, croc_dragon, frostem, traque_lune",
+    "permittedCreatures": "plume_roc, plume_couatl, plume_solar, ecaille_dragon_adulte, ecaille_dragon_ancien",
+    "Other": ""
+  }
+]

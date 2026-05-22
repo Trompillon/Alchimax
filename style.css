@@ -14,11 +14,11 @@
     --accent-pois: #6a1b9a;     /* Violet poison belladone */
 
     /* Raretés version Encre */
-    --rar-commun: #708890;
-    --rar-peucommun: #1b5e20;
+    --rar-common: #708890;
+    --rar-uncommon: #1b5e20;
     --rar-rare: #0d47a1;
-    --rar-tresrare: #4a148c;
-    --rar-legendaire: #e65100;
+    --rar-veryrare: #4a148c;
+    --rar-legendary: #e65100;
 }
 
 * {
@@ -199,8 +199,8 @@ button:hover {
     box-shadow: 2px 4px 8px rgba(0,0,0,0.1);
 }
 
-.item-alchimie { border-left-color: var(--accent-alch); }
-.item-herboristerie { border-left-color: var(--accent-herb); }
+.item-alchemy { border-left-color: var(--accent-alch); }
+.item-herbalism { border-left-color: var(--accent-herb); }
 .item-poison { border-left-color: var(--accent-pois); }
 
 .card h3 {
@@ -227,9 +227,11 @@ button:hover {
     margin-top: 5px;
 }
 
-.rarete-commun { background-color: rgba(93, 64, 55, 0.15); color: var(--rar-commun); }
-.rarete-peucommun { background-color: rgba(27, 94, 32, 0.15); color: var(--rar-peucommun); }
-.rarete-rare { background-color: rgba(13, 71, 161, 0.15); color: var(--rar-rare); }
+.rarity-common { background-color: rgba(93, 64, 55, 0.15); color: var(--rar-common); }
+.rarity-uncommon { background-color: rgba(27, 94, 32, 0.15); color: var(--rar-uncommon); }
+.rarity-rare { background-color: rgba(13, 71, 161, 0.15); color: var(--rar-rare); }
+.rarity-veryrare { background-color: rgba(74, 20, 140, 0.15); color: var(--rar-veryrare); }
+.rarity-legendary { background-color: rgba(230, 81, 0, 0.15); color: var(--rar-legendary); }
 
 /* PLACEHOLDER */
 .preview-placeholder {
