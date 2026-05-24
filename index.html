@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alchimax - Gestionnaire d'Alchimie D&D 5e</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="module" src="app.js" defer></script>
+    <meta property="og:title" content="Alchimax - Grimoire d'Alchimie JDR">
+    <meta property="og:description" content="Simulateur de craft et encyclopédie d'herboristerie pour vos campagnes de JDR.">
+    <meta property="og:image" content="img/ton-chaudron-grand.png">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Alchimax : pour faire de l'alchimie un max!">
+    <title>Alchimax</title>
+    <link rel="stylesheet" href="style.css?v=1.0">
+    <script src="app.js?v=1.0" defer></script>
+    <link rel="icon" href="img/cauldronicon-48.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/cauldronicon-192.png">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
 
@@ -75,6 +83,7 @@
                 <div class="list-panel" id="player-inventory">
                     <h2>Votre Inventaire</h2>
                     <p class="short-desc">Renseignez vos composants disponibles :</p>
+                
                     
                     <!-- Ingredient search -->
                     <div class="search-box">
@@ -88,8 +97,20 @@
                             <option value="uncommon">Peu commun</option>
                             <option value="rare">Rare</option>
                             <option value="veryrare">Très Rare</option>
-                        </select> 
+                            <option value="legendary">Légendaire</option>
+                        </select>
+
+                        <select id="select-type-ingredient">
+                            <option value="all">-- Tous les types --</option>
+                            <option value="vegetal">🌿 Végétaux</option>
+                            <option value="creature">⚔️ Créatures</option>
+                            <option value="potion">🧪 Spéciaux</option>
+                        </select>
                     </div>
+
+                    <button id="btn-reset-inventory" style="background-color: #d84315; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
+                        🗑️ Vider le sac
+                    </button>
 
                     <!-- Inventory inputs list -->
                     <div id="inventory-inputs-container" class="results-scroll">

@@ -267,6 +267,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 10 ou subir 1d4 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "herbe_saint_christophe, belladone",
     "permittedCreatures": "",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -277,6 +278,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "salive_crapaud_geant",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -285,8 +287,8 @@
     "category": "poison",
     "rarity": "common",
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
-    "permittedPlants": "racine_sang, racine_sang",
-    "permittedCreatures": "",
+    "customIngredients": ["racine_de_sang", "racine_de_sang"],
+    "poisonType": "n'est pas un poison",
     "Other": ""
   },
   {
@@ -297,6 +299,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "glande_venin_araignee_geante",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -307,6 +310,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "glande_venin_araignee_loup_geante",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -317,6 +321,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "dard_guepe_geante",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -327,6 +332,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "glande_venin_scolopendre_geant",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -337,6 +343,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "glande_venin_serpent_venimeux_geant",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -347,6 +354,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit effectuer un jet de sauvegarde de Constitution DD 13 ou être empoisonné pendant 1 minute. La cible est également paralysée et peut tenter de réussir son jet de sauvegarder à la fin de ses tours, annulant l'effet sur une réussite. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "mucus_charognard_rampant",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -355,8 +363,8 @@
     "category": "poison",
     "rarity": "uncommon",
     "description": "La première créature que vous rencontrez dans les 10 minutes qui suivent l’absorption de ce philtre vous laisse charmé pendant 1 heure. Si la créature est d’une race et d’un sexe qui vous attire en temps normal, vous la considérez comme votre véritable amour tant que vous êtes charmé.",
-    "permittedPlants": "sarriette_pin",
-    "permittedCreatures": "meche_cheveux_aimer",
+    "customIngredients": ["sarriette_pin", "meche_cheveux_aimer"],
+    "poisonType": "ingestion",
     "Other": ""
   },
   {
@@ -367,6 +375,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "glande_venin_ettercap",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -375,9 +384,9 @@
     "category": "poison",
     "rarity": "uncommon",
     "description": "Si vous la buvez, vous subissez 3d6 dégâts de poison et vous devez réussir un jet de sauvegarde de Constitution DC 13 ou être empoisonné. Au début de chacun de vos tours tant que vous êtes empoisonné de cette manière, vous subissez 3d6 dégâts de poison.",
-    "permittedPlants": "herbe_saint_christophe",
-    "permittedCreatures": "",
-    "Other": "Potion_soins"
+    "customIngredients": ["herbe_saint_christophe", "potion_soins"],
+    "poisonType": "ingestion",
+    "Other": ""
   },
   {
     "id": "salive_cockatrice",
@@ -387,6 +396,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit effectuer un jet de sauvegarde de Constitution DD 11 ou être pétrifié. En cas d'échec, la magie commence à transformer la créature en pierre, et celle-ci est entravée. Elle doit retenter le jet de sauvegarde à la fin de son tour. En cas de réussite, l'effet se termine. En cas d'échec, la créature est pétrifiée pendant 24 heures. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "salive_cockatrice",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -395,8 +405,8 @@
     "category": "poison",
     "rarity": "uncommon",
     "description": "Une créature soumise à ce poison doit réussir un jet de sauvegarde de Constitution DD 12. En cas d’échec, elle subit (1d12) dégâts de poison et est empoisonnée pendant 24 heures. En cas de réussite, la créature subit la moitié des dégâts et n’est pas empoisonnée.",
-    "permittedPlants": "belladone, racine_sang",
-    "permittedCreatures": "",
+    "customIngredients": ["belladone", "racine_de_sang"],
+    "poisonType": "ingestion",
     "Other": ""
   },
   {
@@ -407,6 +417,7 @@
     "description": "Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée pendant 1 heure. La créature empoisonnée ne peut pas dire sciemment de mensonge, comme si elle était sous l’effet d’un sort de Zone de vérité. Tout comme le sort, elle peut cependant rester évasif dans ses propos voire s'abstenir de parler.",
     "permittedPlants": "corne_puante",
     "permittedCreatures": "",
+    "poisonType": "ingestion",
     "Other": ""
   },
   {
@@ -417,6 +428,7 @@
     "description": "Une créature touchée par une arme ou une munition empoisonnée doit réussir un jet de sauvegarde de Constitution DD 14 ou prendre 2d4 dégâts de poison.",
     "permittedPlants": "feuilles_arkasu",
     "permittedCreatures": "",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -427,6 +439,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit effectuer un jet de sauvegarde de Constitution DD 11 ou être empoisonné pendant 1 minute. La cible est également paralysée et peut tenter de réussir son jet de sauvegarder à la fin de ses tours, annulant l'effet sur une réussite. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "sac_venin_grell",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -437,6 +450,7 @@
     "description": "Une créature sujette à ce poison doit réussir un jet de sauvegarde de Constitution DD 12 ou être empoisonnée pendant 1 minute. La créature est également paralysée tant qu'elle est empoisonnée. La créature peut effectuer un nouveau jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'état paralysé sur elle-même en cas de réussite.",
     "permittedPlants": "feuilles_eldas",
     "permittedCreatures": "",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -447,6 +461,7 @@
     "description": "Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 14 ou subir (3d6) dégâts de poison, il doit répéter le jet de sauvegarde au début de chacun de ses tours. À chaque échec de sauvegarde successif, le personnage subit (1d6) dégâts de poison. Les jets se succèdent round après round jusqu'à ce que la créature réussisse trois succès à ses jets de sauvegarde auquel cas le poison prend fin.",
     "permittedPlants": "nid_oiseau",
     "permittedCreatures": "",
+    "poisonType": "inhalation",
     "Other": ""
   },
   {
@@ -457,6 +472,7 @@
     "description": "Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonnée pendant 24 heures. La créature empoisonnée est inconsciente. La créature se réveille si elle subit des dégâts.",
     "permittedPlants": "aconit",
     "permittedCreatures": "",
+    "poisonType": "contact",
     "Other": ""
   },
   {
@@ -467,6 +483,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 15 ou subir 3d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "dard_wiverne",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -475,8 +492,8 @@
     "category": "poison",
     "rarity": "rare",
     "description": "Ce poison est généralement fabriqué uniquement par les drows, et doit être conservé et utilisé uniquement dans un endroit éloigné de la lumière du soleil. Une créature exposée à ce poison doit réussir un jet de sauvegarde de Constitution DD 13 ou être empoisonné pendant 1 heure. Si le jet de sauvegarde échoue de 5 ou plus, la créature est également inconsciente pendant cette période. La créature se réveille si elle subit des dégâts ou si une autre créature effectue une action pour la réveiller.",
-    "permittedPlants": "racine_mandragore, seve_noire",
-    "permittedCreatures": "",
+    "customIngredients": ["racine_mandragore", "seve_noire"],
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -485,8 +502,8 @@
     "category": "poison",
     "rarity": "rare",
     "description": "Une fine poudre rouge avec un arôme légèrement fumé, cette poudre doit être soufflée dans le visage de la cible avant de se disperser sans danger dans l’air. La cible doit effectuer un jet de sauvegarde de Charisme DD 18. En cas d’échec, la cible perçoit une version altérée de la réalité où elle voit le monde comme un paysage infernal peuplé de créatures immondes, et devient extrêmement vulnérable à l’intimidation, aux formes agressives de persuasion et à la tromperie pendant 1 heure.",
-    "permittedPlants": "spores_fletrissement, trompette_anges",
-    "permittedCreatures": "",
+    "customIngredients": ["spores_fletrissement", "trompette_anges"],
+    "poisonType": "inhalation",
     "Other": ""
   },
   {
@@ -495,8 +512,8 @@
     "category": "poison",
     "rarity": "rare",
     "description": "Une créature soumise à ce poison doit réussir un jet de sauvegarde de Constitution DD 15 ou subir (1d6) dégâts de poison et être empoisonnée pendant 24h. La créature doit répéter le jet de sauvegarde toutes les 24 heures, prenant (1d6) dégâts de poison et subissant l'état empoisonné en cas d’échec. Après trois jets de sauvegarde réussi, l’effet prend fin.",
-    "permittedPlants": "chapeau_mortuaire, seve_noire",
-    "permittedCreatures": "",
+    "customIngredients": ["chapeau_mortuaire", "seve_noire"],
+    "poisonType": "ingestion",
     "Other": ""
   },
   {
@@ -507,6 +524,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 12 ou subir 2d10 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher",
     "permittedPlants": "",
     "permittedCreatures": "dard_scorpion_geant",
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -517,6 +535,7 @@
     "description": "Une créature sujette à ce poison doit effectuer un jet de sauvegarde de Constitution DD 22, devenant empoisonnée pour 1 heure et subissant (10d8) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
     "permittedPlants": "",
     "permittedCreatures": "bile_dragon_vert_adulte, bile_dragon_vert_ancien",
+    "poisonType": "inhalation",
     "Other": ""
   },
   {
@@ -527,6 +546,7 @@
     "description": "Une créature sujette à ce poison doit effectuer un jet de sauvegarde de Constitution DD 20, subissant (10d10) dégâts de poison en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
     "permittedPlants": "lotus_noir",
     "permittedCreatures": "oeil_basilic",
+    "poisonType": "ingestion",
     "Other": ""
   },
   {
@@ -535,8 +555,8 @@
     "category": "poison",
     "rarity": "veryrare",
     "description": "Une créature sujette à ce poison doit réussir un jet de sauvegarde de Constitution DD 13 ou être pétrifiée. À chaque tour suivant, la créature peut effectuer un nouveau jet de sauvegarde pour mettre fin à l'effet de manière anticipée. Si la créature rate 3 jets de sauvegarde consécutifs, elle est pétrifiée et ne peut plus lancer de nouveaux jets de sauvegarde.",
-    "permittedPlants": "trompette_anges",
-    "permittedCreatures": "",
+    "customIngredients": ["oeil_basilic", "trompette_anges"],
+    "poisonType": "blessure",
     "Other": ""
   },
   {
@@ -547,6 +567,7 @@
     "description": "Une créature sujette à ce poison doit réussir un jet de sauvegarde de Constitution DD 18 ou subir 6d8 dégâts de poison. Il prend la moitié des dégâts en cas de réussite et l'effet du poison s'arrêtera là. S'il échoue, il devra retenter le même jet de sauvegarde au début de son tour subissant 3d8 dégâts de poison à nouveau. Une fois que la créature réussit un jet de sauvegarde contre ce poison, elle devient immunisé à ses effets pendant les prochaines 24heures.",
     "permittedPlants": "coeur_nuit",
     "permittedCreatures": "",
+    "poisonType": "ingestion",
     "Other": ""
   },
   {
@@ -557,6 +578,7 @@
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 19 ou subir 6d6 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
     "permittedPlants": "",
     "permittedCreatures": "dard_ver_pourpre",
+    "poisonType": "blessure",
     "Other": ""
   },
   {

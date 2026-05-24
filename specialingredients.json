@@ -1,0 +1,9 @@
+[
+  {
+    "id": "potion_soins",
+    "name": "Potion de Soins",
+    "type": "potion",
+    "rarity": "Common",
+    "biomes": []
+  }
+]

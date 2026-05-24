@@ -1,54 +1,62 @@
 let INGREDIENTS = []; // Unifié avec la fonction de chargement
 let RECIPES = []; 
-let CREATURES = [];
 
 // Player's Inventory (INGREDIENT_ID: QUANTITY)
 const playerBag = {};
 
 async function loadAllData() {
     try {
-        const [plantsResponse, recipesResponse, creaturesResponse] = await Promise.all([
+        // Chargement des 4 fichiers JSON
+        const [plantsResponse, recipesResponse, creaturesResponse, specialsResponse] = await Promise.all([
             fetch('./plants.json'),
             fetch('./recipes.json'),
-            fetch('./creatures.json')
+            fetch('./creatures.json'),
+            fetch('./specialingredients.json')
         ]);
         
         const rawPlants = await plantsResponse.json();
         const rawRecipes = await recipesResponse.json();
         const rawCreatures = await creaturesResponse.json();
+        const rawSpecials = await specialsResponse.json();
 
-        // 1. Nettoyage et fusion globale dans INGREDIENTS (Plantes + Créatures)
+        // 1. Nettoyage et fusion globale dans INGREDIENTS
         const cleanedPlants = rawPlants.map(plant => ({
             ...plant,
             biomes: plant.biomes ? plant.biomes.split(',').map(b => b.trim()) : []
         }));
 
-        // Sécurisation des créatures : on ajoute biomes ET une rareté par défaut si manquante
         const cleanedCreatures = rawCreatures.map(creature => ({
             ...creature,
-            rarity: creature.rarity || 'Common', // Évite le crash si absent
+            rarity: creature.rarity || 'Common',
             biomes: [] 
         }));
 
-        // Unification du catalogue
-        INGREDIENTS = [...cleanedPlants, ...cleanedCreatures];
-        CREATURES = cleanedCreatures; 
+        const cleanedSpecials = rawSpecials.map(special => ({
+            ...special,
+            rarity: special.rarity || 'Common',
+            biomes: special.biomes || []
+        }));
 
-        // 2. Nettoyage automatique des Recettes (Harmonisation des clés en CamelCase)
+        // Unification complète du catalogue
+        INGREDIENTS = [...cleanedPlants, ...cleanedCreatures, ...cleanedSpecials];
+
+        // 2. Nettoyage automatique des Recettes
         RECIPES = rawRecipes.map(recipe => ({
             id: recipe.id,
             name: recipe.name,
             category: recipe.category,
             rarity: recipe.rarity || 'Common',
             description: recipe.description,
+            poisonType: recipe.poisonType || null, 
+            customIngredients: recipe.customIngredients || null, 
             requiredIngredients: {
                 permittedPlants: recipe.permittedPlants ? recipe.permittedPlants.split(',').map(i => i.trim()) : [],
-                permittedCreatures: recipe.permittedCreatures ? recipe.permittedCreatures.split(',').map(i => i.trim()) : [], // Corrigé en CamelCase
+                permittedCreatures: recipe.permittedCreatures ? recipe.permittedCreatures.split(',').map(i => i.trim()) : [],
                 requiredQuantity: Number(recipe.requiredQuantity) || 1
             }
         }));
 
-        console.log("Magie ! Catalogue unifié chargé :", { INGREDIENTS, RECIPES, CREATURES });
+        console.log("Magie ! Catalogue unifié chargé :", { INGREDIENTS, RECIPES });
 
         // Initialisation de l'inventaire
         INGREDIENTS.forEach(ing => { playerBag[ing.id] = 0; });
@@ -82,6 +90,8 @@ const encycloPreview = document.getElementById('encyclo-preview');
 // Cauldron
 const searchIngredientInput = document.getElementById('search-ingredient');
 const selectRarityIngredient = document.getElementById('select-rarity-ingredient');
+const selectTypeIngredient = document.getElementById('select-type-ingredient'); // NOUVEAU
+const btnResetInventory = document.getElementById('btn-reset-inventory'); // NOUVEAU
 const inventoryInputsContainer = document.getElementById('inventory-inputs-container');
 const craftReadyContainer = document.getElementById('craft-ready');
 const craftAlmostContainer = document.getElementById('craft-almost');
@@ -154,12 +164,25 @@ function filterAndDisplayPotions() {
 function displayRecipeSheet(potion) {
     const rarityClass = potion.rarity ? potion.rarity.toLowerCase().replace(' ', '') : 'common';
     
+    let poisonBadgeHtml = '';
+    if (potion.category === 'poison' && potion.poisonType) {
+        const translation = {
+            'injury': 'Par Blessure',
+            'ingestion': 'Par Ingestion',
+            'inhalation': 'Par Inhalation',
+            'contact': 'Par Contact'
+        };
+        const displayName = translation[potion.poisonType] || potion.poisonType;
+        poisonBadgeHtml = `<span class="badge" style="background-color: #6a1b9a; color: white; margin-left: 5px;">☠️ ${displayName}</span>`;
+    }
+    
     encycloPreview.innerHTML = `
         <div class="recipe-detail">
             <h2 style="font-size: 2rem; margin-bottom: 5px; color: #270f00;">${potion.name}</h2>
             <span class="badge rarity-${rarityClass}" style="margin-bottom: 20px;">
                 ${potion.category.toUpperCase()} - ${potion.rarity}
             </span>
+            ${poisonBadgeHtml}
             <p class="potion-effect" style="font-style: italic; margin-bottom: 25px; font-size: 1.1rem;">
                 "${potion.description || ''}"
             </p>
@@ -180,20 +203,27 @@ function displayRecipeSheet(potion) {
         slotsContainer.innerHTML += generateSlotHtml("Plantes valides", reqIng.permittedPlants);
     } 
     else if (potion.category === 'poison') {
-        const validIds = reqIng.permittedPlants.length > 0 ? reqIng.permittedPlants : reqIng.permittedCreatures;
-        slotsContainer.innerHTML += generateSlotHtml("Composant requis", validIds);
+        if (potion.id === 'poison_basique' && potion.customIngredients) {
+            slotsContainer.innerHTML += generateSlotHtml("Composant requis (un seul au choix)", potion.customIngredients, true);
+        }
+        else if (potion.customIngredients) {
+            slotsContainer.innerHTML += generateSlotHtml("Ingrédients spécifiques requis (tous nécessaires)", potion.customIngredients, false);
+        } 
+        else {
+            const validIds = reqIng.permittedPlants.length > 0 ? reqIng.permittedPlants : reqIng.permittedCreatures;
+            slotsContainer.innerHTML += generateSlotHtml("Composant requis (au choix)", validIds, true);
+        }
     }
 }
 
-function generateSlotHtml(slotTitle, idList) {
+function generateSlotHtml(slotTitle, idList, isAlternative = false) {
     if (!idList || idList.length === 0) return '';
-    let listHtml = idList.map(idIng => {
+    
+    let listItems = idList.map(idIng => {
         const ing = INGREDIENTS.find(i => i.id === idIng);
         if (!ing) return `<li style="color: red;">Inconnu (${idIng})</li>`;
         
         const biome = ing.biomes && ing.biomes.length > 0 ? ` <small style="color: var(--text-muted);">(${ing.biomes.join(', ')})</small>` : '';
-        
-        // Sécurisation de la rareté de l'ingrédient
         const rarityText = ing.rarity || 'Common';
         const rarityCode = rarityText.toLowerCase().replace('-', '').replace(' ', '');
         
@@ -203,7 +233,11 @@ function generateSlotHtml(slotTitle, idList) {
                 (<span style="color: var(--rar-${rarityCode}); font-weight: bold;">${rarityText}</span>)
                 ${biome}
             </li>`;
-    }).join('');
+    });
+
+    let listHtml = isAlternative 
+        ? listItems.join(`<p style="margin: 4px 0 4px 35px; font-weight: bold; color: #d84315; font-size: 0.9rem;">— OU —</p>`)
+        : listItems.join('');
 
     return `<div class="recipe-slot" style="margin-bottom: 15px; background: var(--bg-card); padding: 10px; border-radius: 4px;"><h4 style="color: var(--text-main);">${slotTitle}</h4><ul>${listHtml}</ul></div>`;
 }
@@ -214,6 +248,7 @@ function generateSlotHtml(slotTitle, idList) {
 function filterAndDisplayInventory() {
     const text = searchIngredientInput.value.toLowerCase().trim();
     const rarity = selectRarityIngredient.value;
+    const selectedType = selectTypeIngredient ? selectTypeIngredient.value : 'all'; // NOUVEAU
 
     let usefulIngredientIds = [];
     
@@ -221,6 +256,9 @@ function filterAndDisplayInventory() {
         const categoryRecipes = RECIPES.filter(p => p.category === filterCategory);
         
         categoryRecipes.forEach(potion => {
+            if (potion.customIngredients) {
+                usefulIngredientIds.push(...potion.customIngredients);
+            }
             if (potion.requiredIngredients.permittedPlants) {
                 usefulIngredientIds.push(...potion.requiredIngredients.permittedPlants);
             }
@@ -234,25 +272,34 @@ function filterAndDisplayInventory() {
 
     const filteredIngredients = INGREDIENTS.filter(ing => {
         const matchesText = ing.name ? ing.name.toLowerCase().includes(text) : false;
+        
         const cleanIngredientRarity = ing.rarity ? ing.rarity.toLowerCase().replace(' ', '-') : 'common';
         const matchesRarity = (rarity === 'all' || cleanIngredientRarity === rarity);
+        
+        // NOUVEAU : Gestion du filtre par type de composant (plant, creature, potion)
+        const matchesType = (selectedType === 'all' || ing.type === selectedType);
+        
         const matchesMainFilter = (filterCategory === 'all' || usefulIngredientIds.includes(ing.id));
 
-        return matchesText && matchesRarity && matchesMainFilter;
+        return matchesText && matchesRarity && matchesType && matchesMainFilter;
     });
 
     inventoryInputsContainer.innerHTML = '';
 
     if (filteredIngredients.length === 0) {
-        inventoryInputsContainer.innerHTML = `<p class="short-desc" style="padding: 10px;">Aucun composant requis pour cette catégorie...</p>`;
+        inventoryInputsContainer.innerHTML = `<p class="short-desc" style="padding: 10px;">Aucun composant correspondant...</p>`;
         return;
     }
 
     filteredIngredients.forEach(ing => {
         const row = document.createElement('div');
-        row.style.cssText = "display: flex; justify-content: space-between; align-items: center; padding: 10px; margin-bottom: 8px; background: var(--bg-card); border-radius: 4px; border-left: 3px solid #8d6e63;";
+        row.classList.add('inventory-row'); // On applique la classe CSS à la place du style en ligne !
         
-        const typeIcon = ing.type === 'vegetal' ? '🌿' : '⚔️';
+        let typeIcon = '🌿';
+    // ... le reste de ton code ne bouge pas !
+        if (ing.type === 'creature') typeIcon = '⚔️';
+        if (ing.type === 'potion') typeIcon = '🧪'; 
+        
         const displayRarity = ing.rarity || 'Common';
         
         row.innerHTML = `
@@ -309,6 +356,8 @@ function calculatePossibleCrafts() {
         let canCraft = false;
         let missingOnlyOne = false;
         let missingDetail = "";
+        let holdsAtLeastOneComponent = false; 
+        
         const reqIng = potion.requiredIngredients;
 
         // ----- CASE 1: ALCHEMY -----
@@ -318,10 +367,30 @@ function calculatePossibleCrafts() {
 
             const hasPlant = ownedPlants.length > 0;
             const hasCreature = ownedCreatures.length > 0;
+            
+            if (hasPlant || hasCreature) holdsAtLeastOneComponent = true;
 
-            if (hasPlant && hasCreature) canCraft = true;
-            else if (hasPlant && !hasCreature) { missingOnlyOne = true; missingDetail = "1 Composant Créature"; }
-            else if (!hasPlant && hasCreature) { missingOnlyOne = true; missingDetail = "1 Composant Végétal"; }
+            if (hasPlant && hasCreature) {
+                canCraft = true;
+            } 
+            else if (hasPlant && !hasCreature) { 
+                missingOnlyOne = true; 
+                const buildCreatureList = reqIng.permittedCreatures.map(id => {
+                    const ing = INGREDIENTS.find(i => i.id === id);
+                    return ing ? `• ${ing.name} (${ing.rarity || 'Common'})` : '';
+                }).filter(str => str !== '').join('<br>');
+
+                missingDetail = `1 composant Créature au choix parmi :<br><span style="display:block; margin-top:5px; font-size:0.85rem; color:#795548; line-height:1.3;">${buildCreatureList}</span>`;
+            } 
+            else if (!hasPlant && hasCreature) { 
+                missingOnlyOne = true; 
+                const buildPlantList = reqIng.permittedPlants.map(id => {
+                    const ing = INGREDIENTS.find(i => i.id === id);
+                    return ing ? `• ${ing.name} (${ing.rarity || 'Common'})` : '';
+                }).filter(str => str !== '').join('<br>');
+
+                missingDetail = `1 composant Végétal au choix parmi :<br><span style="display:block; margin-top:5px; font-size:0.85rem; color:#795548; line-height:1.3;">${buildPlantList}</span>`;
+            }
         }
 
         // ----- CASE 2: HERBALISM -----
@@ -330,21 +399,81 @@ function calculatePossibleCrafts() {
             const ownedPlantsCount = ownedValidPlants.length;
             const requiredCount = 2; 
 
+            if (ownedPlantsCount > 0) holdsAtLeastOneComponent = true;
+
             if (ownedPlantsCount >= requiredCount) {
                 canCraft = true;
             } else if (ownedPlantsCount === 1) {
                 missingOnlyOne = true; 
-                missingDetail = "1 autre Plante différente valide"; 
+                const buildPlantList = reqIng.permittedPlants.map(id => {
+                    const ing = INGREDIENTS.find(i => i.id === id);
+                    if (!ing) return '';
+                    const biomesText = ing.biomes && ing.biomes.length > 0 ? ` (${ing.biomes.join(', ')})` : '';
+                    return `• ${ing.name} (${ing.rarity || 'Common'})${biomesText}`;
+                }).filter(str => str !== '').join('<br>');
+
+                missingDetail = `1 autre plante différente au choix parmi :<br><span style="display:block; margin-top:5px; font-size:0.85rem; color:#795548; line-height:1.3;">${buildPlantList}</span>`; 
             }
         }
 
         // ----- CASE 3: POISON -----
         else if (potion.category === 'poison') {
-            const idList = reqIng.permittedPlants.length > 0 ? reqIng.permittedPlants : reqIng.permittedCreatures;
-            const owned = idList.filter(id => playerBag[id] > 0);
+            if (potion.customIngredients) {
+                // SOUS-CAS A.1 : Le Poison Basique
+                if (potion.id === 'poison_basique') {
+                    const ownedIngredients = potion.customIngredients.filter(id => playerBag[id] > 0);
+                    
+                    if (ownedIngredients.length > 0) {
+                        holdsAtLeastOneComponent = true;
+                        canCraft = true;
+                    } else {
+                        missingOnlyOne = true;
+                        missingDetail = "Herbe de St Christophe OU Belladone";
+                    }
+                } 
+                // SOUS-CAS A.2 : Les autres exceptions cumulatives
+                else {
+                    const tempBag = { ...playerBag }; 
+                    let missingIngredients = [];
+                    let usedCount = 0;
 
-            if (owned.length > 0) canCraft = true;
-            else { missingOnlyOne = true; missingDetail = "L'ingrédient de base"; }
+                    potion.customIngredients.forEach(reqId => {
+                        if (tempBag[reqId] && tempBag[reqId] > 0) {
+                            tempBag[reqId]--; 
+                            usedCount++; 
+                        } else {
+                            const ing = INGREDIENTS.find(i => i.id === reqId);
+                            if (ing) {
+                                missingIngredients.push(`• ${ing.name} (${ing.rarity || 'Common'})`);
+                            } else {
+                                missingIngredients.push(`• Composant inconnu (${reqId})`);
+                            }
+                        }
+                    });
+
+                    if (usedCount > 0) holdsAtLeastOneComponent = true;
+
+                    if (missingIngredients.length === 0) {
+                        canCraft = true;
+                    } else if (missingIngredients.length === 1) {
+                        missingOnlyOne = true;
+                        missingDetail = `Le composant suivant :<br><span style="display:block; margin-top:5px; font-size:0.85rem; color:#795548; line-height:1.3;">${missingIngredients[0]}</span>`;
+                    }
+                }
+            } 
+            // SOUS-CAS B : Le poison est standard
+            else {
+                const idList = reqIng.permittedPlants.length > 0 ? reqIng.permittedPlants : reqIng.permittedCreatures;
+                const owned = idList.filter(id => playerBag[id] > 0);
+
+                if (owned.length > 0) {
+                    holdsAtLeastOneComponent = true;
+                    canCraft = true;
+                } else {
+                    missingOnlyOne = true;
+                    missingDetail = "L'ingrédient de base";
+                }
+            }
         }
 
         // ----- RESULTS DISPLAY -----
@@ -355,11 +484,14 @@ function calculatePossibleCrafts() {
                     <p class="short-desc" style="color: green; font-weight: bold;">Prêt à être distillé !</p>
                 </div>
             `;
-        } else if (missingOnlyOne) {
+        } 
+        else if (missingOnlyOne && holdsAtLeastOneComponent) {
             craftAlmostContainer.innerHTML += `
-                <div class="card" style="margin-bottom: 8px; border-left: 5px solid #ff9100; opacity: 0.85;">
+                <div class="card" style="margin-bottom: 8px; border-left: 5px solid #ff9100; opacity: 0.85; padding: 10px;">
                     <h3 style="color: #5d4037;">${potion.name}</h3>
-                    <p class="short-desc" style="color: #d84315;">❌ Manque : ${missingDetail}</p>
+                    <p class="short-desc" style="color: #d84315; font-weight: bold; margin-bottom:0;">
+                        ❌ Manque : <span style="font-weight: normal; color: var(--text-main);">${missingDetail}</span>
+                    </p>
                 </div>
             `;
         }
@@ -377,6 +509,24 @@ selectRarity.addEventListener('change', filterAndDisplayPotions);
 
 searchIngredientInput.addEventListener('input', filterAndDisplayInventory);
 selectRarityIngredient.addEventListener('change', filterAndDisplayInventory);
+
+// Écouteur pour le nouveau filtre par type d'ingrédient
+if (selectTypeIngredient) {
+    selectTypeIngredient.addEventListener('change', filterAndDisplayInventory);
+}
+
+// NOUVEAU : Écouteur pour le bouton de Reset de l'inventaire
+if (btnResetInventory) {
+    btnResetInventory.addEventListener('click', () => {
+        // Remet toutes les quantités à zéro
+        Object.keys(playerBag).forEach(id => {
+            playerBag[id] = 0;
+        });
+        // Rafraîchit l'affichage de l'inventaire et relance le calcul du labo
+        filterAndDisplayInventory();
+        calculatePossibleCrafts();
+    });
+}
 
 btnFilters.forEach(btn => {
     btn.addEventListener('click', (e) => {
