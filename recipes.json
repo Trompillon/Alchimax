@@ -405,7 +405,7 @@
     "category": "poison",
     "rarity": "uncommon",
     "description": "Une créature soumise à ce poison doit réussir un jet de sauvegarde de Constitution DD 12. En cas d’échec, elle subit (1d12) dégâts de poison et est empoisonnée pendant 24 heures. En cas de réussite, la créature subit la moitié des dégâts et n’est pas empoisonnée.",
-    "customIngredients": ["belladone", "racine_de_sang"],
+    "customIngredients": ["belladone", "racine_sang"],
     "poisonType": "ingestion",
     "Other": ""
   },
