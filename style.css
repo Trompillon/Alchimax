@@ -32,7 +32,6 @@ body {
     color: var(--text-main);
     font-family: 'Georgia', serif; /* Police plus littéraire / JDR */
     line-height: 1.5;
-    padding-bottom: 40px;
 }
 
 .hidden { display: none !important; }
@@ -256,6 +255,91 @@ button:hover {
     background: var(--bg-card); 
     border-radius: 4px; 
     border-left: 3px solid #8d6e63;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+    background-color: var(--bg-card);
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+    margin-top: 30px; /* Donne de l'air sous le chaudron/encyclopédie */
+}
+
+.footer-simple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espace entre le lien et le copyright */
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.footer-simple a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-simple a:hover {
+    color: var(--text-main); /* Le lien s'éclaire au survol */
+    text-decoration: underline;
+}
+
+/* ==========================================
+   PAGE MENTIONS LÉGALES (Mentions.html)
+   ========================================== */
+.page-mentions {
+    background-color: var(--bg-main, #121212);
+    margin: 0;
+    padding: 0;
+}
+
+.mentions-container {
+    max-width: 800px;
+    margin: 60px auto; 
+    padding: 40px;
+    line-height: 1.8;
+    color: var(--text-main, #ddd);
+    background-color: var(--bg-card, #1e1e1e);
+    border-radius: 8px;
+    border: 1px solid var(--border-color, #333);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.mentions-container h1 { 
+    color: var(--text-main,); 
+    margin-bottom: 30px; 
+    font-size: 2rem;
+    border-bottom: 2px solid var(--border-color, #333);
+    padding-bottom: 10px;
+}
+
+.mentions-container h2 { 
+    color: var(--text-main); 
+    margin-top: 30px; 
+    font-size: 1.3rem; 
+}
+
+.mentions-container p {
+    margin-bottom: 15px;
+}
+
+.back-link { 
+    display: inline-block; 
+    margin-bottom: 20px; 
+    color: var(--text-muted, #777); 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+.back-link:hover { 
+    color: var(--text-main, white); 
+    text-decoration: underline; 
 }
 
 /* ==========================================================================
