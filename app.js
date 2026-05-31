@@ -58,8 +58,18 @@ async function loadAllData() {
 
         console.log("Magie ! Catalogue unifié chargé :", { INGREDIENTS, RECIPES });
 
-        // Initialisation de l'inventaire
-        INGREDIENTS.forEach(ing => { playerBag[ing.id] = 0; });
+        // 3. Récupération de la sauvegarde locale si elle existe
+        const savedBag = localStorage.getItem('alchimax_inventory');
+        const localData = savedBag ? JSON.parse(savedBag) : null;
+
+        // Initialisation ou restauration de l'inventaire
+        INGREDIENTS.forEach(ing => { 
+            if (localData && localData[ing.id] !== undefined) {
+                playerBag[ing.id] = localData[ing.id]; // On restaure la quantité sauvegardée
+            } else {
+                playerBag[ing.id] = 0; // Sinon, base à zéro
+            }
+        });
         
         filterAndDisplayPotions();
         filterAndDisplayInventory();
@@ -71,6 +81,11 @@ async function loadAllData() {
 
 // Lancement automatique au chargement du DOM
 window.addEventListener('DOMContentLoaded', loadAllData);
+
+// Fonction de sauvegarde de l'inventaire dans le navigateur
+function saveInventoryToLocalStorage() {
+    localStorage.setItem('alchimax_inventory', JSON.stringify(playerBag));
+}
 
 // ==========================================
 // 1. DOM SELECTORS
@@ -320,6 +335,7 @@ function filterAndDisplayInventory() {
                 playerBag[ing.id]--;
                 row.querySelector('.qty-display').textContent = playerBag[ing.id];
                 calculatePossibleCrafts();
+                saveInventoryToLocalStorage();
             }
         });
 
@@ -327,6 +343,7 @@ function filterAndDisplayInventory() {
             playerBag[ing.id] = (playerBag[ing.id] || 0) + 1;
             row.querySelector('.qty-display').textContent = playerBag[ing.id];
             calculatePossibleCrafts();
+            saveInventoryToLocalStorage();
         });
 
         inventoryInputsContainer.appendChild(row);
@@ -525,6 +542,7 @@ if (btnResetInventory) {
         // Rafraîchit l'affichage de l'inventaire et relance le calcul du labo
         filterAndDisplayInventory();
         calculatePossibleCrafts();
+        saveInventoryToLocalStorage();
     });
 }
 
