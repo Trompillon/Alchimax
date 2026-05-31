@@ -676,7 +676,7 @@
     "name": "Potion de mana mineure",
     "category": "alchemy",
     "rarity": "uncommon",
-    "description": "Après avoir bu cette potion, l’utilisateurrécupère 2 emplacements de sorts similairement à la restauration magique du magicien ou récupère 2 points de sorcellerie (ensorceleur).",
+    "description": "Après avoir bu cette potion, l’utilisateur récupère 2 emplacements de sorts similairement à la restauration magique du magicien ou récupère 2 points de sorcellerie (ensorceleur).",
     "permittedPlants": "parasol_fee, epine_argent, sedum_gel",
     "permittedCreatures": "ecaille_dragonnet, ecaille_dragon_jeune, ecaille_dragon_adulte, ecaille_dragon_ancien, meche_cheveux_dryade, bec_cockatrice, oeil_vissepince, essence_feu_follet, oeil_basilic, oeil_beholder, oeil_nothic, tentacule_flagelleur_mental",
     "Other": ""

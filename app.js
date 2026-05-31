@@ -58,6 +58,15 @@ async function loadAllData() {
 
         console.log("Magie ! Catalogue unifié chargé :", { INGREDIENTS, RECIPES });
 
+        filterCategory = localStorage.getItem('alchimax_current_filter') || 'all';
+        btnFilters.forEach(btn => {
+            if (btn.getAttribute('data-filter') === filterCategory) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        
         // 3. Récupération de la sauvegarde locale si elle existe
         const savedBag = localStorage.getItem('alchimax_inventory');
         const localData = savedBag ? JSON.parse(savedBag) : null;
@@ -73,6 +82,7 @@ async function loadAllData() {
         
         filterAndDisplayPotions();
         filterAndDisplayInventory();
+        calculatePossibleCrafts();
 
     } catch (error) {
         console.error("Le grimoire a planté au chargement :", error);
@@ -311,7 +321,6 @@ function filterAndDisplayInventory() {
         row.classList.add('inventory-row'); // On applique la classe CSS à la place du style en ligne !
         
         let typeIcon = '🌿';
-    // ... le reste de ton code ne bouge pas !
         if (ing.type === 'creature') typeIcon = '⚔️';
         if (ing.type === 'potion') typeIcon = '🧪'; 
         
@@ -496,15 +505,16 @@ function calculatePossibleCrafts() {
         // ----- RESULTS DISPLAY -----
         if (canCraft) {
             craftReadyContainer.innerHTML += `
-                <div class="card item-${potion.category}" style="margin-bottom: 8px;">
+                <div class="card item-${potion.category}" style="margin-bottom: 8px;" title="${potion.description || ''}">
                     <h3 style="color: #270f00;">✨ ${potion.name}</h3>
                     <p class="short-desc" style="color: green; font-weight: bold;">Prêt à être distillé !</p>
+                    <p style="font-size: 0.8rem; margin: 0; color: var(--text-muted); font-style: italic;"></p>
                 </div>
             `;
         } 
         else if (missingOnlyOne && holdsAtLeastOneComponent) {
             craftAlmostContainer.innerHTML += `
-                <div class="card" style="margin-bottom: 8px; border-left: 5px solid #ff9100; opacity: 0.85; padding: 10px;">
+                <div class="card" style="margin-bottom: 8px; border-left: 5px solid #ff9100; opacity: 0.85; padding: 10px;" title="${potion.description || ''}">
                     <h3 style="color: #5d4037;">${potion.name}</h3>
                     <p class="short-desc" style="color: #d84315; font-weight: bold; margin-bottom:0;">
                         ❌ Manque : <span style="font-weight: normal; color: var(--text-main);">${missingDetail}</span>
@@ -551,8 +561,10 @@ btnFilters.forEach(btn => {
         btnFilters.forEach(b => b.classList.remove('active'));
         e.target.classList.add('active');
         filterCategory = e.target.getAttribute('data-filter');
+        localStorage.setItem('alchimax_current_filter', filterCategory);
         
         filterAndDisplayPotions();
-        filterAndDisplayInventory(); 
+        filterAndDisplayInventory();
+        calculatePossibleCrafts();
     });
 });
