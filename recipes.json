@@ -286,7 +286,7 @@
     "name": "Sang factice",
     "category": "poison",
     "rarity": "common",
-    "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
+    "description": "Fabriqué à partir de racine de sang et infusé avec de petites quantités de fer en poudre, cette mixture a l’apparence, l’odeur et même le goût du vrai sang. Une investigation de 15 ou plus ou tout niveau de magie d’identification révèle sa véritable nature.",
     "customIngredients": ["racine_sang", "racine_sang"],
     "poisonType": "n'est pas un poison",
     "Other": ""
