@@ -287,7 +287,7 @@
     "category": "poison",
     "rarity": "common",
     "description": "Une créature touchée par l’arme ou les munitions empoisonnées doit faire un jet de sauvegarde de Constitution DD 11 ou subir 1d8 dégâts de poison. Une fois appliqué, le poison conserve sa puissance pendant 1 minute avant de sécher.",
-    "customIngredients": ["racine_de_sang", "racine_de_sang"],
+    "customIngredients": ["racine_sang", "racine_sang"],
     "poisonType": "n'est pas un poison",
     "Other": ""
   },
